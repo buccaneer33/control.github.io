@@ -70,7 +70,7 @@
 }
 /************MAIN************/
 .main{
-  padding: 80px 130px 9px;
+  padding: 100px 130px 9px;
   width: 100vw;
   min-height: calc( 100% - 50px );
   box-sizing: border-box;
@@ -81,17 +81,43 @@
   justify-content: space-around;
   flex: 1;
   flex-wrap: wrap;
-
+  box-sizing: border-box;
 }
 
 .main__sidebar{
   background-color: #dee;
-  flex-grow: 3;
+  flex-grow: 1;
+
+  padding: 5px 0;
+  box-sizing: content-box;
+  width: 220px;
 }
 .main__about{
   background-color: #ede;
-  flex-grow: 4;
+  flex-grow: 11;
+  padding: 5px 60px;
+  box-sizing: content-box;
+  width: 740px;
+
 }
+.main__about--flexbox{
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .menu{
   color: #414141;
@@ -99,20 +125,85 @@
   font: 24px 'Fira Sans';
   font-weight: normal;
   text-align: right;
+  list-style-type:none;
+  text-decoration: none;
+  background-color: #ccd;
+  padding-right: 30px;
+  margin:0;
 
 }
+.menu__item{
+  line-height: 46px;
+  vertical-align: middle;
+  color: #414141;
+}
+.menu__item--activ{
+background: url('../img/menu__item--active.png');
+background-repeat: no-repeat;
+background-position: right;
+color:#33c2e4;
+
+
+}
+
+
 .menu__about{
+  text-decoration: none;
+  color: inherit;
+  padding-right: 24px;
 
 }
 .menu__career{
+  text-decoration: none;
+  color: inherit;
+  padding-right: 24px;
 
 }
 .menu__portfolio{
-
+  text-decoration: none;
+  color: inherit;
+  padding-right: 24px;
 }
+.menu__about::before{
+  content: "\f21b";
+	font-family: FontAwesome;
+	color:inherit;
+	padding-right:10px
+}
+.menu__career::before{
+  content: "\f135";
+	font-family: FontAwesome;
+	color:inherit;
+	padding-right:10px
+}
+.menu__portfolio::before{
+  content: "\f0b1";
+	font-family: FontAwesome;
+	color:inherit;
+	padding-right:10px
+}
+
+
+
+
+
 .about_photo{
   width: 220px;
   height: 220px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: flex;
+}
+
+
+.about_article{
+  background-color: #ccd;
+  display: flex;
+  width: 65%;
+  font: 18px 'Fira Sans';
+  color: #646464;
+  display: flex;
+  flex-flow: column;
 }
 
 

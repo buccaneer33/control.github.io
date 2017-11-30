@@ -5,6 +5,7 @@
 <title>About</title>
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
 
@@ -21,23 +22,20 @@
         </div>
 </header>
 <main class="main main--flexbox">
-              <section class="sidebar">
-                      <ul class="menu">
-                              <li class="menu__about">
-                                      <a href="#">Обо мне</a>
-                              </li>
-                              <li class="menu__career">
-                                      <a href="#">Карьерный путь</a>
-                              </li>
-                              <li class="menu__portfolio">
-                                      <a href="#">Портфолио</a>
-                              </li>
-                      </ul>
-              </section>
-              <section class="about">
-                      <img class="about_photo" scr="img/w1280x1024_4236.png" >
-                      <article class="about_article">
+              <section class="main__sidebar">
+                      <menu class="menu">
+                            <li class="menu__item menu__item--activ"><a class="menu__about" href="#">Обо мне</a></li>
+                            <li class="menu__item"><a class="menu__career" href="#">Карьерный путь</a></li>
+                            <li class="menu__item"><a class="menu__portfolio" href="#">Портфолио</a></li>
+                      </menu>
 
+
+              </section>
+              <section class="main__about main__about--flexbox">
+                      <img class="about_photo" src="./img/w1280x1024_4236.png" alt="photo">
+                      <article class="about_article">
+                            <h2>Обо мне</h2><br/>
+                            <p>Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые</p>
                       </article>
 
               </section>
