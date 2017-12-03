@@ -1,23 +1,4 @@
-/**********FOOTER************/
-.footer{
-  background-color:#414141;
-  width: 100vw;
-  height: 50px;
-  padding: 8px 130px;
-  box-sizing: border-box;
 
-}
-.footer--flexbox{
-  display: flex;
-  /**/
-  /*flex-wrap: wrap;
-  */
-
-  align-items: center;
-      /**/
-  justify-content: space-between;
-
-}
 .confidentiality__link{
   color: #9c9c9c;
   text-decoration: none;

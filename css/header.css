@@ -1,22 +1,5 @@
 /**************HEADER*************/
-.header--flexbox{
-	display: flex;
-	align-items: center;
-      /**/
-	justify-content: space-between;
 
-}
-.header{
-  padding: 9px 130px;
-  width: 100vw;/**/
-  height: 79px;
-  top: 0;
-  left: 0;
-  background-color:#ffffff;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  box-sizing: border-box;
-}
 .pesron{
   background-color: #000;
   max-width: 400px;
