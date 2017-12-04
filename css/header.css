@@ -16,8 +16,10 @@
   color: #414141;
 }
 .contacts{
+  position: relative;
 
 }
+
 .contacts__button{
   border: none;
   padding: 5px 0;
@@ -28,41 +30,55 @@
   background-color: #fff;
   cursor: pointer;
 }
-.contacts__button:hover{
+.contacts:hover  .contacts__button{
   color: #e85f61;
   background:url('../img/button__border--hover.png') left bottom repeat-x;
   background-color: #fff;
 }
-.contacts__button:hover ~ .contacts__field{
+.contacts:hover  .contacts__field{
+  display: block;
+}
+.contacts__field:hover{
+  display: block;
+}
+.contacts__field-item:hover .contacts__field{
   display: block;
 }
 
 .contacts__field{
-	width: 190px;
+	width: 200px;
 	height: 130px;
   background-color:#fff;
-	/*border: 0.5px solid #000;*/
 	position: absolute;
-	top: 75px;
-	right: 135px;
-	padding: 5px 10px;
+	top: 40px;
+	right: 0px;
+	padding: 10px 10px 5px;
   border-radius: 12px;
   box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
-	z-index: 98;
+  z-index: 1000;
   box-sizing: border-box;
-  cursor: pointer;
-  display: none;
+  display: none;/**/
+
 }
-.contacts__field::before{
-    content: '\f0d8';
-    font-size: 46px;
-    font-family: FontAwesome;
-  	color:#fff;
-  	padding-right:10px;
-    position: absolute; /* Абсолютное позиционирование */
-    left: 80px; top: -35px; /* Положение треугольника */
-    text-shadow: 1px -1px 1px #dddddd, -1px -1px 1px #dddddd;
-    border:0.5px solid #000;
+.contacts__field-triang{
+  z-index: 1000;
+}
+
+.contacts__field-triang::before{
+
+  position: absolute;
+  top: 40px;
+  text-align: center;
+
+  width: 100%;
+  content: '\f0d8';
+  font-size: 20px;
+  font-family: FontAwesome;
+  color:#fff;
+  padding-right:10px;
+  left: 35px;
+  top: -15px;
+  text-shadow: 1px -1px 1px #dddddd, -1px -1px 1px #dddddd;
 
 }
 
@@ -102,16 +118,19 @@
     text-decoration: none;
     font-size: 18px;
     color: #414141;
+    font: 18px 'Fira Sans';
 
 }
 .contacts--phone{
     text-decoration: none;
     font-size: 18px;
     color: #414141;
+    font: 18px 'Fira Sans';
 
 }
 .contacts--skype{
     text-decoration: none;
     font-size: 18px;
     color: #414141;
+    font: 18px 'Fira Sans';
 }
