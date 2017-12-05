@@ -36,13 +36,16 @@
   background-color: #fff;
 }
 .contacts:hover  .contacts__field{
-  display: block;
+
+opacity: 1;
 }
 .contacts__field:hover{
-  display: block;
+
+  opacity: 1;
 }
 .contacts__field-item:hover .contacts__field{
-  display: block;
+
+  opacity: 1;
 }
 
 .contacts__field{
@@ -57,7 +60,8 @@
   box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
   z-index: 1000;
   box-sizing: border-box;
-  display: none;/**/
+
+  opacity: 0;
 
 }
 .contacts__field-triang{
@@ -88,7 +92,7 @@
 	padding: 0;
 	background-color: #fff;
 	line-height: 40px;
-	z-index: 99;
+	  z-index: 999;
 }
 .contacts--phone::before{
   content: '\f095';

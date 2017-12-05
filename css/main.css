@@ -118,7 +118,7 @@ color:#33c2e4;
           flex-direction: column;
 }
 .about_article__text-zone{
-/*  background-color: #ccc;*/
+  /*background-color: #ccc;*/
   min-height:250px;
   max-height:20vh;
   width: 100%;
@@ -126,9 +126,16 @@ color:#33c2e4;
   color: #646464;
   overflow-y: auto;
   padding-right: 30px;
+  z-index: 1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
+}
+.mCustomScrollBox {
+  z-index: 2;
+}
+.mCSB_container{
+  z-index: 3;
 }
 .about_article__header{
   margin: 0;
