@@ -118,9 +118,9 @@ color:#33c2e4;
           flex-direction: column;
 }
 .about_article__text-zone{
-
-  min-height:280px;
-  max-height:400px;
+/*  background-color: #ccc;*/
+  min-height:250px;
+  max-height:20vh;
   width: 100%;
   font: 18px 'Fira Sans';
   color: #646464;
