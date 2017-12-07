@@ -1,0 +1,13 @@
+.footer{
+      background-color:$color2-d_gray;
+      height: 50px;
+      flex-basis: 50px;
+      flex-shrink:1;
+
+      &--flexbox{
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+      }
+}

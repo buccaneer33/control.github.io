@@ -1,0 +1,11 @@
+.about_photo{
+    padding: 5px 20px;
+
+    &__img{
+      width: 220px;
+      height: 220px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+    }
+
+}

@@ -1,0 +1,30 @@
+@import "variables.scss";
+@import "menu/menu.scss";
+@import "main-photo/main-photo.scss";
+@import "main/main.scss";
+@import "content/content.scss";
+@import "confidentiality/confidentiality.scss";
+@import "social/social.scss";
+
+
+
+.body{
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+  min-height: 300px;
+
+
+      &--flexbox{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+}
+.wrapper{
+  max-width: 940px;
+  margin: 0 auto;
+}

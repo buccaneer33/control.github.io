@@ -1,0 +1,114 @@
+.contacts{
+  position: relative;
+
+    &__button{
+        border: none;
+        padding: 5px 0;
+        background:url('../img/button__border.png') left bottom repeat-x;
+        font: $font-size $font-family;
+        font-weight: bold;
+        color: $color4-blue;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    &:hover .contacts__button{
+        color: $color5-red;
+        background:url('../img/button__border--hover.png') left bottom repeat-x;
+        background-color: #fff;
+    }
+
+
+
+    &__field{
+      width: 200px;
+      height: 130px;
+      background-color:#fff;
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      padding: 10px 10px 5px;
+      border-radius: 12px;
+      box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
+      z-index: 9;
+      box-sizing: border-box;
+      display: none;
+
+          &-triang{
+                  z-index: 100;
+
+              &:before{
+                position: absolute;
+                top: 40px;
+                text-align: center;
+                width: 100%;
+                content: '\f0d8';
+                font-size: 20px;
+                font-family: FontAwesome;
+                color:#fff;
+                padding-right:10px;
+                left: 35px;
+                top: -15px;
+                text-shadow: 1px -1px 1px #dddddd, -1px -1px 1px #dddddd;
+
+              }
+          }
+
+          &-item{
+            font: $font-size $font-family;
+            font-weight: 400;
+            padding: 0;
+            background-color: #fff;
+            line-height: 40px;
+          }
+    }
+
+
+    &--email{
+        text-decoration: none;
+        font-size: $font-size;
+        color: #414141;
+        font: 18px 'Fira Sans';
+
+        &:before{
+          content: '\f0e0';
+          font-size: $font-size;
+          font-family: FontAwesome;
+          color:#33bfe2;
+          padding-right: 8px;
+          text-decoration: none;
+        }
+
+    }
+    &--phone{
+        text-decoration: none;
+        font-size: $font-size;
+        color: #414141;
+        font: 18px 'Fira Sans';
+
+        &:before{
+          content: '\f095';
+          font-size: $font-size;
+          font-family: FontAwesome;
+          color:#33bfe2;
+          padding-right: 8px;
+          text-decoration: none;
+        }
+
+    }
+    &--skype{
+        text-decoration: none;
+        font-size: $font-size;
+        color: #414141;
+        font: 18px 'Fira Sans';
+
+        &:before{
+          content: '\f17e';
+          font-size: 18px;
+          font-family: FontAwesome;
+          color:#33bfe2;
+          padding-right: 8px;
+
+        }
+    }
+}

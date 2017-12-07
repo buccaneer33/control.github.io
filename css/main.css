@@ -26,6 +26,9 @@
   vertical-align: middle;
   color: #414141;
   cursor: pointer;
+  padding-right: 24px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu__item--activ{
@@ -33,28 +36,26 @@ background: url('../img/menu__item--active.png');
 background-repeat: no-repeat;
 background-position: right;
 color:#33c2e4;
+font-weight: bold;
 }
 .menu__item:hover{
-  color: #33c1e3;
+  font-weight: normal;
 }
 
 
 .menu__about{
-  text-decoration: none;
   color: inherit;
-  padding-right: 24px;
+
 
 }
 .menu__career{
-  text-decoration: none;
   color: inherit;
-  padding-right: 24px;
+
 
 }
 .menu__portfolio{
-  text-decoration: none;
   color: inherit;
-  padding-right: 24px;
+
 }
 .menu__about::before{
   content: "\f21b";

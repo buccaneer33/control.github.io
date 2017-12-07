@@ -1,0 +1,86 @@
+.about_article{
+  padding: 5px 20px;
+  width: 250px;
+
+      &--flexboox{
+        display: flex;
+        flex-grow: 5;
+        flex-basis: 250px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-direction: column;
+      }
+
+      &__text-zone{
+        /*background-color: #ccc;*/
+        min-height:250px;
+        max-height:20vh;
+        width: 100%;
+        font: $font-size $font-family;
+        color: #646464;
+        overflow-y: auto;
+        padding-right: 30px;
+        z-index: 1;
+        box-sizing: border-box;
+      }
+
+      &__header{
+        margin: 0;
+
+      }
+      &__button-zone{
+        height: 160px;
+        width: 100%;
+        padding-right: 30px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      &__button{
+        color: $color5-red;
+        width: 170px;
+        border: 2px solid $color5-red;
+        border-radius: 17px;
+        padding: 6px 10px;
+        text-align: center;
+        box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover{
+          color: #fff;
+          background-color: #e85f61;
+          width: 170px;
+          border: 2px solid #e85f61;
+        }
+      }
+
+      &__button-text{
+        color:inherit;
+        font: bold 14px $font-open_sans;
+
+        &::before{
+          content: "\f019";
+          font-family: FontAwesome;
+          color:inherit;
+          padding-right:10px
+        }
+      }
+}
+
+
+
+
+
+
+
+}
+.mCustomScrollBox {
+  z-index: 2;
+}
+.mCSB_container{
+  z-index: 3;
+}

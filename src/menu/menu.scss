@@ -1,0 +1,67 @@
+.menu{
+  color: #414141;
+  text-decoration: none;
+  font: $font-size $font-family;
+  font-weight: normal;
+  text-align: right;
+  list-style-type:none;
+  text-decoration: none;
+  margin:0;
+      &__item{
+        line-height: 46px;
+        vertical-align: middle;
+        color: #414141;
+        cursor: pointer;
+        padding-right: 24px;
+        text-decoration: none;
+
+        &--activ{
+          background: url('../img/menu__item--active.png');
+          background-repeat: no-repeat;
+          background-position: right;
+          color:$color4-blue;
+          font-weight: bold;
+        }
+
+        &:hover{
+          font-weight: normal;
+        }
+      }
+      &__about{
+            color: inherit;
+
+            &::before{
+              content: "\f21b";
+              font-family: FontAwesome;
+              color:inherit;
+              padding-right:10px
+            }
+      }
+
+      &__career{
+          color: inherit;
+
+            &::before{
+              content: "\f135";
+            	font-family: FontAwesome;
+            	color:inherit;
+            	padding-right:10px
+            }
+
+
+      }
+      &__portfolio{
+          color: inherit;
+
+            &::before{
+              content: "\f0b1";
+              font-family: FontAwesome;
+              color:inherit;
+              padding-right:10px
+            }
+
+
+      }
+
+
+}
