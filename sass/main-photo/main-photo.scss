@@ -1,0 +1,26 @@
+.about_photo{
+    padding: 5px 20px;
+
+    &__img{
+      width: 220px;
+      height: 220px;
+      border: 5px solid #fff;
+      border-radius: 50%;
+    }
+
+}
+.career_photo{
+      padding: 5px 20px;
+
+      &__img{
+        width: 220px;
+        height: 220px;
+        border: 1px solid inherit;
+        border-radius: 9px;
+      }
+      &__h{
+        font: 35px $font-family;
+        color: $color2-d_gray;
+        margin-top: 0;
+      }
+}

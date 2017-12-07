@@ -2,15 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>About</title>
+<title>Career</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 <link href="css/normalize.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+<!--
 <link href="css/style-f.css" rel="stylesheet" type="text/css">
 <link href="css/header.css" rel="stylesheet" type="text/css">
 <link href="css/footer.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+-->
+<link href="src/style.css" rel="stylesheet" type="text/css">
 
 <!--<link href="css/jScrollPane.css" rel="stylesheet" type="text/css">
 <link href="css/scrollbar.css" rel="stylesheet" type="text/css">-->
@@ -58,8 +62,8 @@
               <div class="sidebar">
 
                          <menu class="menu">
-                                <li class="menu__item menu__item--activ"><a class="menu__about" href="#">Обо мне</a></li>
-                                <li class="menu__item"><a class="menu__career" href="#">Карьерный путь</a></li>
+                                <li class="menu__item "><a class="menu__about" href="#">Обо мне</a></li>
+                                <li class="menu__item menu__item--activ"><a class="menu__career" href="#">Карьерный путь</a></li>
                                 <li class="menu__item"><a class="menu__portfolio" href="#">Портфолио</a></li>
                           </menu>
 
@@ -67,31 +71,73 @@
 
 
 
-              <div class="about_photo">
-                          <img class="about_photo__img" src="./img/w1280x1024_4236.png" alt="photo">
+              <div class="career_photo">
+                          <h2 class="career_photo__h">Карьерный путь</h2>
+                          <img class="career_photo__img" src="./img/career.png" alt="photo">
 
               </div>
-              <div  class="about_article about_article--flexbox">
+              <div  class="career career--flexbox">
+                <div class="career__l-border"></div>
+                <div class="career__items">
+
+<!------------------------------------------------------------------>
+                    <div class="career__item career__item--flexbox">
+                      <h2 class="career__H">
+                        "Weblime"
+                      </h2>
+                      <p class="career__content">
+                          Старший разработчик
+                      </p>
+                      <p class="career__content">
+                          2015 - по настоящее время
+                      </p>
+
+                    </div>
+<!---------------------------------------------------------------->
+                    <div class="career__item">
+                      <h2 class="career__H">
+                        "Weblime"
+                      </h2>
+                      <p class="career__content">
+                            Средний разработчик
+                      </p>
+                      <p class="career__content">
+                            2013 - 2015
+                      </p>
+                    </div>
+<!---------------------------------------------------------------->
+                    <div class="career__item">
+                      <h2 class="career__H">
+                        "Weblime"
+                      </h2>
+                      <p class="career__content">
+                            Младший разработчик
+                      </p>
+                      <p class="career__content">
+                            2012 - 2013
+                      </p>
+                    </div>
+<!---------------------------------------------------------------->
+                    <div class="career__item">
+                      <h2 class="career__H">
+                        "Weblime"
+                      </h2>
+                      <p class="career__content">
+                            Стажер
+                      </p>
+                      <p class="career__content">
+                            2011 - 2012
+                      </p>
+                    </div>
+
+                </div>
 
 
 
 
-                      <div class="about_article__text-zone about_article__text-zone--scrollbar mCustomScrollbar" data-mcs-theme="dark-thick>
-                              <h2 class="about_article__header">Обо мне</h2>
-                            <p>
-                              Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
-                            </p>
-                      </div>
-                      <div class="about_article__button-zone">
-                              <div class="about_article__button">
-                                    <div class="about_article__button-text">Скачать резюме</div>
-                              </div>
-                      </div>
 
-
-
-                    </div><!--about_article-->
-            </div>
+              </div><!--about_article-->
+      </div>
 
           </div>
           <div class="footer">
@@ -100,9 +146,9 @@
                           <a href="#" class="confidentiality__link">Конфеденциальность</a>
                   </div>
                   <div class="social social--flexbox">
-                      <a href="#" class="social__fb"></a>
-                      <a href="#" class="social__vk"></a>
-                      <a href="#" class="social__tw"></a>
+                      <a href="#" class="social__link social__link--fb"><i class="social__fb"></i></a>
+                      <a href="#" class="social__link social__link--vk"><i class="social__vk"></i></a>
+                      <a href="#" class="social__link social__link--tw"><i class="social__tw"></i></a>
 
                   </div>
 

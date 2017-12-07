@@ -1,12 +1,12 @@
 {
-  "name": "new-repp",
+  "name": "01_hello.ere",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-      "gulp": "gulp",
-      "gulp-dev": "gulp default watch"
-    },
+    "gulp": "gulp",
+    "gulp-dev": "gulp default watch"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/buccaneer33/new-repp.git"

@@ -12,12 +12,6 @@
         cursor: pointer;
     }
 
-    &:hover .contacts__button{
-        color: $color5-red;
-        background:url('../img/button__border--hover.png') left bottom repeat-x;
-        background-color: #fff;
-    }
-
 
 
     &__field{
@@ -111,4 +105,19 @@
 
         }
     }
+}
+
+.contacts:hover  .contacts__button{
+  color: #e85f61;
+  background:url('../img/button__border--hover.png') left bottom repeat-x;
+  background-color: #fff;
+}
+.contacts:hover  .contacts__field{
+  display: block;
+}
+.contacts__field:hover{
+    display: block;
+}
+.contacts__field-item:hover .contacts__field{
+  display: block;
 }

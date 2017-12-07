@@ -7,28 +7,34 @@
   list-style-type:none;
   text-decoration: none;
   margin:0;
+
       &__item{
         line-height: 46px;
         vertical-align: middle;
         color: #414141;
         cursor: pointer;
         padding-right: 24px;
-        text-decoration: none;
+
+
+        &:hover{
+          font-weight: normal;
+          color:#33c2e4;
+
+        }
 
         &--activ{
           background: url('../img/menu__item--active.png');
           background-repeat: no-repeat;
           background-position: right;
           color:$color4-blue;
-          font-weight: bold;
+          font-weight: bold !important;
         }
 
-        &:hover{
-          font-weight: normal;
-        }
+
       }
       &__about{
             color: inherit;
+            text-decoration: none;
 
             &::before{
               content: "\f21b";
@@ -40,6 +46,7 @@
 
       &__career{
           color: inherit;
+          text-decoration: none;
 
             &::before{
               content: "\f135";
@@ -52,6 +59,7 @@
       }
       &__portfolio{
           color: inherit;
+          text-decoration: none;
 
             &::before{
               content: "\f0b1";
