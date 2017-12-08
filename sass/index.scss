@@ -1,4 +1,5 @@
-@import "variables.scss";
+@import "helpers/variables.scss";
+@import "helpers/mixins.scss";
 @import "body/body.scss";
 @import "confidentiality/confidentiality.scss";
 @import "contacts/contacts.scss";

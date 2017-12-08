@@ -8,11 +8,9 @@
 
 
       &--flexbox{
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-flow: column nowrap;
-}
+          @include flexbox(flex,column,stretch,
+          space-between,nowrap);
+          }
 }
 .wrapper{
   max-width: 940px;
