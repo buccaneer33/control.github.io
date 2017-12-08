@@ -4,11 +4,6 @@
 
 
   &__flexbox{
-  /*  display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: nowrap;*/
     @include flexbox(flex,column,flex-start,center,nowrap);
   }
 }
@@ -28,10 +23,6 @@
     }
 
     &--flexbox{
-      /*display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;*/
       @include flexbox(flex,row,center,space-around,nowrap);
     }
 
@@ -68,10 +59,13 @@
 
     &__H{
         margin: 5px;
-        font-size: 21px;
+        font: 21px 'Fira Sans light';
+        font-weight: 600;
     }
     &__p{
         margin: 5px;
+        font-weight: 600;
+        font: 18px 'Fira Sans light';
     }
     &__content{
         border-radius: 9px;
