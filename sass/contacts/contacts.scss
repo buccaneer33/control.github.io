@@ -111,13 +111,17 @@
   color: #e85f61;
   background:url('../img/button__border--hover.png') left bottom repeat-x;
   background-color: #fff;
+  transition: 0.5s;
 }
 .contacts:hover  .contacts__field{
   display: block;
+  transition: 0.5s;
 }
 .contacts__field:hover{
     display: block;
+    transition: 0.5s;
 }
 .contacts__field-item:hover .contacts__field{
   display: block;
+  transition: 0.5s;
 }
