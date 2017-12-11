@@ -1,7 +1,11 @@
 .sidebar{
-  padding: 5px 20px;
+  padding: 11px 0px;
+  margin: 0 20px 0 0;
+
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
+  background-color: #ccc;
+  flex-basis: 220px;
 }
 .main{
           flex-grow: 10;

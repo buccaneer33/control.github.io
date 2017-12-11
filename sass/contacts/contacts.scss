@@ -1,15 +1,35 @@
 .contacts{
   position: relative;
+  float: right;
 
     &__button{
         border: none;
-        padding: 5px 0;
-        background:url('../img/button__border.png') left bottom repeat-x;
+      //border-bottom: 1px dotted $color4-blue;
+        padding: 0px 0;
+      //  background:url('../img/button__border.png') left bottom repeat-x;
         font: $font-size $font-family;
         font-weight: bold;
         color: $color4-blue;
         background-color: #fff;
         cursor: pointer;
+        overflow: hidden;
+        width: 120px;
+
+
+        &::after{
+          content:" ........................";
+          letter-spacing: 3px; /* Use letter-spacing to increase space between dots*/
+          margin-top: 0;
+          color: inherit;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 5px;
+          margin-top: -10px;
+          position: absolute;
+          top: 29px;
+          left: -3px;
+
+        }
     }
 
 
@@ -109,7 +129,7 @@
 
 .contacts:hover  .contacts__button{
   color: #e85f61;
-  background:url('../img/button__border--hover.png') left bottom repeat-x;
+  //background:url('../img/button__border--hover.png') left bottom repeat-x;
   background-color: #fff;
   transition: 0.5s;
 }

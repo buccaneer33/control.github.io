@@ -1,5 +1,8 @@
 .about_photo{
-    padding: 5px 20px;
+  margin: 0 20px;
+    padding: 11px 0px 0 17px;
+    flex-basis: 240px;
+    background-color: #ccf;
 
     &__img{
       width: 220px;
@@ -10,7 +13,10 @@
 
 }
 .career_photo{
-      padding: 5px 20px;
+      padding: 7px 0px 0 2px;
+      background-color: #cfc;
+      flex-basis: 236px;
+      overflow: visible;
 
       &__img{
         width: 220px;
@@ -19,8 +25,11 @@
         border-radius: 9px;
       }
       &__h{
-        font: 35px 'Myriad Pro';
+        font: 35px 'Fira Sans';
         color: $color2-d_gray;
+        min-width: 230px;
         margin-top: 0;
+        padding: 0px;
+        overflow: visible;
       }
 }
