@@ -14,7 +14,7 @@
     font: $font-size $font-family;
     margin-bottom: 0px;
     padding: 6px 0px;
-    border: 1px solid #000;
+    //border: 1px solid #000;
 
 
     &:before{
@@ -48,14 +48,14 @@
     }
 
     &__line{
-          margin-right: 15px;
+          margin: -14px 15px -14px 0;
           padding: 0;
           width: 1px;
-          height: 110px;
+          height: 136px;
           background-color: #dddddd;
 
           &-top{
-            margin-right: 15px;
+            margin: 0 15px 0 0;
             align-self: flex-end;
             width: 1px;
             height: 58px;
@@ -64,7 +64,7 @@
           }
 
           &-bottom{
-            margin-right: 15px;
+            margin: 0 15px 0 0;
             align-self: flex-start;
             width: 1px;
             height: 58px;
