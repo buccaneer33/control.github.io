@@ -15,8 +15,9 @@
 .career_photo{
       padding: 7px 0px 0 2px;
       background-color: #cfc;
-      flex-basis: 236px;
+      flex-basis: 237px;
       overflow: visible;
+      width: 180px;
 
       &__img{
         width: 220px;
@@ -29,6 +30,7 @@
         color: $color2-d_gray;
         min-width: 230px;
         margin-top: 0;
+        margin-bottom: 25px;
         padding: 0px;
         overflow: visible;
       }
