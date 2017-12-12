@@ -1,0 +1,54 @@
+.portfolio{
+  flex-grow: 1;
+  flex-basis: 700px;
+  padding:0;
+
+    &--flexbox{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: #ccc;
+    }
+    &__item{
+      flex-basis:222px;
+      background-color: #ccf;
+      margin: 10px;
+    }
+    &__img-cont{
+      padding: 0;
+      margin: 0;
+      width: 220px;
+      height: 172px;
+      border: 1px solid transparent;
+      border-radius: 10px 10px 0 0;
+    }
+    &__img{
+      width: 220px;
+      height: 172px;
+    }
+    &__link{
+      font: 21px $font-family;
+      color: $color4-blue;
+      padding: 5px 20px;
+    }
+    &__link-desk{
+        padding: 5px 20px;
+        font: 14px $font-family;
+        color:$color2-d_gray;
+    }
+    &__type{
+      padding: 5px 20px;
+      font: 14px $font-family;
+      font-weight: bold;
+      color: #aeaeae;
+      &-span::before{
+        content: '\f10b';
+        font-family: FontAwesome;
+        color: inherit;
+        padding-right: 5px;
+      }
+    }
+
+}
