@@ -4,9 +4,7 @@
 
     &__button{
         border: none;
-      //border-bottom: 1px dotted $color4-blue;
         padding: 0px 0;
-      //  background:url('../img/button__border.png') left bottom repeat-x;
         font: $font-size $font-family;
         font-weight: bold;
         color: $color4-blue;
@@ -35,13 +33,13 @@
 
 
     &__field{
-      width: 200px;
-      height: 130px;
+      width: 373px;
+      height: 240px;
       background-color:#fff;
       position: absolute;
       top: 40px;
       right: 0px;
-      padding: 10px 10px 5px;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
       z-index: 9;
@@ -55,13 +53,13 @@
                 position: absolute;
                 top: 40px;
                 text-align: center;
-                width: 100%;
+                width: 145%;
                 content: '\f0d8';
                 font-size: 20px;
                 font-family: FontAwesome;
                 color:#fff;
                 padding-right:10px;
-                left: 35px;
+                left: 95px;
                 top: -15px;
                 text-shadow: 1px -1px 1px #dddddd, -1px -1px 1px #dddddd;
 
@@ -71,7 +69,7 @@
           &-item{
             font: $font-size $font-family;
             font-weight: 400;
-            padding: 0;
+            padding: 15px;
             background-color: #fff;
             line-height: 40px;
           }
@@ -82,11 +80,11 @@
         text-decoration: none;
         font-size: $font-size;
         color: #414141;
-        font: 18px 'Fira Sans';
+        font: 30px 'Fira Sans';
 
         &:before{
           content: '\f0e0';
-          font-size: $font-size;
+          font-size: 30px;
           font-family: FontAwesome;
           color:#33bfe2;
           padding-right: 8px;
@@ -98,11 +96,11 @@
         text-decoration: none;
         font-size: $font-size;
         color: #414141;
-        font: 18px 'Fira Sans';
+        font: 30px 'Fira Sans';
 
         &:before{
           content: '\f095';
-          font-size: $font-size;
+          font-size: 30px;
           font-family: FontAwesome;
           color:#33bfe2;
           padding-right: 8px;
@@ -114,11 +112,11 @@
         text-decoration: none;
         font-size: $font-size;
         color: #414141;
-        font: 18px 'Fira Sans';
+        font: 30px 'Fira Sans';
 
         &:before{
           content: '\f17e';
-          font-size: 18px;
+          font-size: 30px;
           font-family: FontAwesome;
           color:#33bfe2;
           padding-right: 8px;
@@ -144,4 +142,60 @@
 .contacts__field-item:hover .contacts__field{
   display: block;
   transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+     .contacts{
+       position: relative;
+       float: right;
+
+         &__button{
+             border: none;
+             padding: 0px 0;
+             font: 0 $font-family;
+             font-weight: bold;
+             color: $color4-blue;
+             background-color: #fff;
+             cursor: pointer;
+             overflow: hidden;
+             width: 60px;
+
+
+             &::after{
+               content: '\f095';
+               font-size: 50px;
+               font-family: FontAwesome;
+               color:#33bfe2;
+               position: absolute;
+               top: 18px;
+               right: -20px;
+
+         }
+     }
+     &__field{
+           &-triang{
+
+               &:before{
+                 left: 78px;
+                 top: -15px;
+
+               }
+           }
+
+
+   }
+}
 }

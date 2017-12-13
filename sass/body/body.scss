@@ -2,6 +2,7 @@
   background-color: #f6f6f6;
   width: 100%;
   height: 100vh;
+  min-height: 100%;
   margin: 0 auto;
   overflow: auto;
   min-height: 300px;
@@ -15,4 +16,26 @@
 .wrapper{
   max-width: 940px;
   margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .wrapper{
+   width: 96%;
+   margin: 0 auto;
+   padding: 0 2%;
+ }
+
+
 }

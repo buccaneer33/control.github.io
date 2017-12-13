@@ -9,42 +9,67 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: flex-start;
-        background-color: #ccc;
+        //background-color: #ddd;
+    }
+    &__h{
+      font:35px $font-family;
+      margin-bottom: 5px;
     }
     &__item{
       flex-basis:222px;
-      background-color: #ccf;
-      margin: 10px;
+      box-sizing: ищborder-box;
+      background-color: #fff;
+      margin: 0 10px 15px 0;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
+
+      &:hover .portfolio__link-a{
+        color: $color5-red;
+      }
     }
     &__img-cont{
       padding: 0;
       margin: 0;
-      width: 220px;
+      width: 100%;
       height: 172px;
-      border: 1px solid transparent;
-      border-radius: 10px 10px 0 0;
+    //  border: 1px solid transparent;
+      border-radius: 10px 10px 0px 0px;
     }
     &__img{
-      width: 220px;
+      width: 100%;
       height: 172px;
+    //  border: 1px solid transparent;
+      border-radius: 10px 10px 0px 0px;
     }
     &__link{
+
+      padding: 5px 20px 0;
+    }
+    &__link-a{
       font: 21px $font-family;
       color: $color4-blue;
-      padding: 5px 20px;
+      text-decoration: none;
     }
     &__link-desk{
-        padding: 5px 20px;
+        padding: 0px 20px 5px;
         font: 14px $font-family;
         color:$color2-d_gray;
     }
     &__type{
-      padding: 5px 20px;
+      padding: 5px 20px 20px;
       font: 14px $font-family;
       font-weight: bold;
       color: #aeaeae;
-      &-span::before{
+
+      &-app::before{
         content: '\f10b';
+        font-family: FontAwesome;
+        color: inherit;
+        padding-right: 5px;
+      }
+      &-desc::before{
+        content: '\f108';
         font-family: FontAwesome;
         color: inherit;
         padding-right: 5px;

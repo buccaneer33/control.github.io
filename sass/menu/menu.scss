@@ -75,3 +75,61 @@
 
 
 }
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .menu{
+   @include flexbox(flex, row, center, space-between, wrap);
+
+
+       &__item{
+          padding-right: 5px;
+
+          &--activ{
+                    background: transparent;
+
+                    color:$color4-blue;
+                    font-weight: bold !important;
+                  }
+
+
+       }
+       &__about{
+                   &::before{
+                     content: "";
+                     padding-right:1px
+                   }
+             }
+
+       &__career{
+
+                   &::before{
+                     content: "";
+                     padding-right:1px
+                   }
+
+
+             }
+             &__portfolio{
+                   &::before{
+                     content: "";
+                     padding-right:1px
+                   }
+
+
+             }
+     }
+
+
+}

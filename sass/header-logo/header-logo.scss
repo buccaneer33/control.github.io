@@ -13,3 +13,29 @@
     color: $color2-d_gray;
   }
 }
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .person{
+   max-width: 150px;
+
+   &__name{
+     padding: 0 18px;
+     font: 14px $font-family;
+     color: $color2-d_gray;
+     line-height: 20px;
+   }
+ }
+
+}
