@@ -17,7 +17,7 @@
     }
     &__item{
       flex-basis:222px;
-      box-sizing: ищborder-box;
+      box-sizing: border-box;
       background-color: #fff;
       margin: 0 10px 15px 0;
       border-radius: 10px;
@@ -76,4 +76,46 @@
       }
     }
 
+}
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .portfolio{
+   flex-grow: 1;
+   padding:0;
+   &__h{
+     font:35px $font-family;
+     margin-bottom: 5px;
+     text-align: center;
+   }
+
+
+     &--flexbox{
+         display: flex;
+         align-items: center;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: center;
+         //background-color: #ddd;
+     }
+     &__item{
+
+
+       margin: 20px;
+
+     }
+
+
+}
 }
