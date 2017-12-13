@@ -33,18 +33,18 @@
 
 
     &__field{
-      width: 373px;
-      height: 240px;
-      background-color:#fff;
-      position: absolute;
-      top: 40px;
-      right: 0px;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
-      z-index: 9;
-      box-sizing: border-box;
-      display: none;
+      width: 200px;
+        height: 130px;
+        background-color:#fff;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        padding: 10px 10px 5px;
+        border-radius: 12px;
+        box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
+        z-index: 9;
+        box-sizing: border-box;
+        display: none;
 
           &-triang{
                   z-index: 100;
@@ -69,7 +69,7 @@
           &-item{
             font: $font-size $font-family;
             font-weight: 400;
-            padding: 15px;
+            padding: 0;
             background-color: #fff;
             line-height: 40px;
           }
@@ -77,52 +77,52 @@
 
 
     &--email{
-        text-decoration: none;
-        font-size: $font-size;
-        color: #414141;
-        font: 30px 'Fira Sans';
+       text-decoration: none;
+       font-size: $font-size;
+       color: #414141;
+       font: 18px 'Fira Sans';
 
-        &:before{
-          content: '\f0e0';
-          font-size: 30px;
-          font-family: FontAwesome;
-          color:#33bfe2;
-          padding-right: 8px;
-          text-decoration: none;
-        }
+       &:before{
+         content: '\f0e0';
+         font-size: $font-size;
+         font-family: FontAwesome;
+         color:#33bfe2;
+         padding-right: 8px;
+         text-decoration: none;
+       }
 
-    }
-    &--phone{
-        text-decoration: none;
-        font-size: $font-size;
-        color: #414141;
-        font: 30px 'Fira Sans';
+   }
+   &--phone{
+       text-decoration: none;
+       font-size: $font-size;
+       color: #414141;
+       font: 18px 'Fira Sans';
 
-        &:before{
-          content: '\f095';
-          font-size: 30px;
-          font-family: FontAwesome;
-          color:#33bfe2;
-          padding-right: 8px;
-          text-decoration: none;
-        }
+       &:before{
+         content: '\f095';
+         font-size: $font-size;
+         font-family: FontAwesome;
+         color:#33bfe2;
+         padding-right: 8px;
+         text-decoration: none;
+       }
 
-    }
-    &--skype{
-        text-decoration: none;
-        font-size: $font-size;
-        color: #414141;
-        font: 30px 'Fira Sans';
+   }
+   &--skype{
+       text-decoration: none;
+       font-size: $font-size;
+       color: #414141;
+       font: 18px 'Fira Sans';
 
-        &:before{
-          content: '\f17e';
-          font-size: 30px;
-          font-family: FontAwesome;
-          color:#33bfe2;
-          padding-right: 8px;
+       &:before{
+         content: '\f17e';
+         font-size: 18px;
+         font-family: FontAwesome;
+         color:#33bfe2;
+         padding-right: 8px;
 
-        }
-    }
+       }
+   }
 }
 
 .contacts:hover  .contacts__button{
@@ -158,44 +158,105 @@
 
 @media screen and (max-width: 520px) {
  /* Smapthone (мобильный телефон) */
-     .contacts{
-       position: relative;
-       float: right;
+         .contacts{
+           position: relative;
+           float: right;
 
-         &__button{
-             border: none;
-             padding: 0px 0;
-             font: 0 $font-family;
-             font-weight: bold;
-             color: $color4-blue;
-             background-color: #fff;
-             cursor: pointer;
-             overflow: hidden;
-             width: 60px;
+             &__button{
+                 border: none;
+                 padding: 0px 0;
+                 font: 0 $font-family;
+                 font-weight: bold;
+                 color: $color4-blue;
+                 background-color: #fff;
+                 cursor: pointer;
+                 overflow: hidden;
+                 width: 60px;
 
 
-             &::after{
-               content: '\f095';
-               font-size: 50px;
-               font-family: FontAwesome;
-               color:#33bfe2;
-               position: absolute;
-               top: 18px;
-               right: -20px;
+                 &::after{
+                   content: '\f095';
+                   font-size: 50px;
+                   font-family: FontAwesome;
+                   color:#33bfe2;
+                   position: absolute;
+                   top: 18px;
+                   right: -20px;
 
+             }
          }
-     }
-     &__field{
-           &-triang{
+         &__field{
+           width: 350px;
+           height: 240px;
 
-               &:before{
-                 left: 78px;
-                 top: -15px;
+
+
+               &-triang{
+
+                   &:before{
+                     left: 78px;
+                     top: -15px;
+
+                   }
 
                }
-           }
+               &-item{
+                 font: $font-size $font-family;
+                 font-weight: 400;
+                 padding: 15px;
+                 background-color: #fff;
+                 line-height: 40px;
+               }
 
 
-   }
-}
+         }
+
+        &--email{
+            text-decoration: none;
+            font-size: $font-size;
+            color: #414141;
+            font: 30px 'Fira Sans';
+
+            &:before{
+              content: '\f0e0';
+              font-size: 30px;
+              font-family: FontAwesome;
+              color:#33bfe2;
+              padding-right: 8px;
+              text-decoration: none;
+            }
+
+        }
+        &--phone{
+            text-decoration: none;
+            font-size: $font-size;
+            color: #414141;
+            font: 30px 'Fira Sans';
+
+            &:before{
+              content: '\f095';
+              font-size: 30px;
+              font-family: FontAwesome;
+              color:#33bfe2;
+              padding-right: 8px;
+              text-decoration: none;
+            }
+
+        }
+        &--skype{
+            text-decoration: none;
+            font-size: $font-size;
+            color: #414141;
+            font: 30px 'Fira Sans';
+
+            &:before{
+              content: '\f17e';
+              font-size: 30px;
+              font-family: FontAwesome;
+              color:#33bfe2;
+              padding-right: 8px;
+
+            }
+        }
+    }
 }
