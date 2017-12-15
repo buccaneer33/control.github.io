@@ -2,15 +2,18 @@
   max-width: 400px;
 
   &__image{
-    height: 60px;
-    width: 60px;
-    border: 1px solid #bdbdbd;
+    height: 58px;
+    width: 58px;
+    border: 2px solid #bdbdbd;
     border-radius: 50%;
   }
   &__name{
-    padding: 0 18px;
+    padding: 1px 18px 0 18px;
     font: $font-size $font-family;
     color: $color2-d_gray;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
   }
 }
 @media screen and (max-width: 1200px) {
