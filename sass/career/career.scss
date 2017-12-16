@@ -14,6 +14,7 @@
     font: $font-size $font-family;
     margin-bottom: 9px;
     padding: 6px 0px;
+    transition: 0.5s;
     //border: 1px solid #000;
 
 
@@ -33,6 +34,7 @@
       z-index: 4;
       border-radius: 50%;
       padding: 3px 10px 7px 0;
+      transition: 0.5s;
     }
 
     &--flexbox{
@@ -44,7 +46,7 @@
       margin-right:  12px;
       font-size: 14px;
       width: 30px;
-
+      transition: 0.5s;
     }
 
     &__line{
@@ -90,6 +92,7 @@
         padding: 9px 15px;
         margin: 0 5px;
         cursor: pointer;
+        transition: 0.5s;
         box-shadow:
         1px 1px 1px rgba(121, 121, 121, .1),
         -1px 1px 1px rgba(221, 221, 221, .1),

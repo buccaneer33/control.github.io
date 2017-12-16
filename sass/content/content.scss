@@ -1,6 +1,6 @@
 .about_article{
   margin: 0 0 0 20px;
-  padding: 5px 0px;
+  padding: 3px 0px;
   width: 380px;
   //background-color: #cfc;
 
@@ -33,7 +33,9 @@
       &__header{
         margin-top: 5px;
         margin-bottom: 0;
-        font: 36px 'Fira Sans';
+        font: 35px 'Fira Sans';
+        color: $color2-d_gray;
+        font-weight: 600;
 
       }
       &__button-zone{

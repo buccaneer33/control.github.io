@@ -6,7 +6,7 @@
 
     &__button{
       border: none;
-      padding: 0 0 0 1px;
+      padding: 0 0 0 0px;
       font: 18px "Fira Sans",sans-serif;
       font-weight: 700;
       color: #33c1e3;
@@ -14,7 +14,7 @@
       cursor: pointer;
       overflow: hidden;
       width: 123px;
-      letter-spacing: 0.1px;
+      letter-spacing: .1px;
 
 
         &::after{
@@ -27,7 +27,7 @@
           line-height: 4px;
           margin-top: -10px;
           position: absolute;
-          top: 29px;
+          top: 31px;
           left: 2px;
         }
     }
