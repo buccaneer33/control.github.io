@@ -12,23 +12,37 @@
       &__item{
         line-height: 44px;
         vertical-align: middle;
-        color: #414141;
+        //color: #414141;
         cursor: pointer;
         padding-right: 29px;
+        animation-name: menuBlinkUp;
+        animation-timing-function:ease-in-out;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+
 
 
         &:hover{
           font-weight: normal;
-          color:#33c2e4;
-          transition: 0.5s;
+          //color:#33c2e4;
+          //transition: 0.5s;
+          animation-name: menuBlink;
+          animation-timing-function:ease-in-out;
+          animation-duration: 0.3s;
+          animation-fill-mode: forwards;
 
         }
 
+
         &--activ{
-          background: url('../img/menu__item--active.png');
-          background-repeat: no-repeat;
-          background-position: right;
-          color:$color4-blue;
+          line-height: 45px;
+          vertical-align: middle;
+          cursor: pointer;
+          padding-right: 30px;
+          background: url('../img/menu__item--active.png') !important;
+          background-repeat: no-repeat !important;
+          background-position: right !important;
+          color:$color4-blue !important;
           font-weight: bold !important;
         }
 
@@ -42,7 +56,7 @@
               content: "\f21b";
               font-family: FontAwesome;
               color:inherit;
-              padding-right:10px
+              padding-right:9px
             }
       }
 
@@ -54,7 +68,7 @@
               content: "\f135";
             	font-family: FontAwesome;
             	color:inherit;
-            	padding-right:10px
+            	padding-right:8px
             }
 
 

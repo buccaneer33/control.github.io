@@ -16,6 +16,12 @@
       width: 123px;
       letter-spacing: .1px;
 
+      animation-name:contactsButtonBlinkUp;
+      animation-timing-function:ease-in-out;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+
+
 
         &::after{
           content: "......................";
@@ -25,7 +31,7 @@
           font-weight: 400;
           font-size: 11px;
           line-height: 4px;
-          margin-top: -10px;
+          margin-top: -11px;
           position: absolute;
           top: 31px;
           left: 2px;
@@ -46,7 +52,8 @@
         box-shadow: 1px 1px 1px rgba(221, 221, 221, 1), -1px 1px 1px rgba(221, 221, 221, 1), 1px -1px 1px rgba(221, 221, 221, 1), -1px -1px 1px rgba(221, 221, 221, 1) ;
         z-index: 9;
         box-sizing: border-box;
-        display: none;
+        visibility: hidden;
+        transition: 0.3s;
 
           &-triang{
                   z-index: 100;
@@ -128,22 +135,27 @@
 }
 
 .contacts:hover  .contacts__button{
-  color: #e85f61;
+  //color: #e85f61;
   //background:url('../img/button__border--hover.png') left bottom repeat-x;
-  background-color: #fff;
-  transition: 0.5s;
+  //background-color: #fff;
+  //transition: 0.3s;
+  animation-name:contactsButtonBlink;
+  animation-timing-function:ease-in-out;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
 }
 .contacts:hover  .contacts__field{
-  display: block;
-  transition: 0.5s;
+  visibility: visible;
+  //display: block;
+  transition: 0.3s;
 }
 .contacts__field:hover{
-    display: block;
-    transition: 0.5s;
+  visibility: visible;
+    transition: 0.3s;
 }
 .contacts__field-item:hover .contacts__field{
-  display: block;
-  transition: 0.5s;
+  visibility: visible;
+  transition: 0.3s;
 }
 
 @media screen and (max-width: 1200px) {
