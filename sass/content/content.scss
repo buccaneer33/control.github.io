@@ -33,7 +33,7 @@
 
       &__header{
         margin-top: 5px;
-        margin-bottom: 17px;
+        margin-bottom: 10px;
         font: 35px 'Fira Sans';
         color: $color2-d_gray;
         font-weight: 600;
@@ -42,7 +42,7 @@
 
       }
       &__button-zone{
-        height: 94px;
+        height: 101px;
         width: 101%;
         padding-right: 0px;
         box-sizing: border-box;
@@ -54,11 +54,11 @@
 
       &__button{
         //color: $color5-red;
-        width: 174px;
+        width: 173px;
         margin-right: 1px;
         //border: 2px solid $color5-red;
         border-radius: 20px;
-        padding: 9px 0px;
+        padding: 8px 0 10px;
         text-align: center;
         box-sizing: border-box;
         cursor: pointer;
@@ -84,11 +84,14 @@
 
       &__button-text{
         color:inherit;
-        font: bold 16px $font-family;
+        font: 15px $font-family;
+        font-weight: 600;
+        letter-spacing: 0.5px;
 
         &::before{
           content: "\f019";
           font-family: FontAwesome;
+          font-size: 13px;
           color:inherit;
           padding-right:9px
         }
