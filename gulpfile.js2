@@ -9,7 +9,7 @@ var autoprefixer  = require('gulp-autoprefixer');
 var sourceMaps    = require('gulp-sourcemaps');
 var gulpif        = require('gulp-if');
 var clean         = require('gulp-clean');
-//var browserSync   = require('browser-sync').create()
+var browserSync   = require('browser-sync').create()
 
 // Окружение
 //const ENV = process.env.NODE_ENV || 'production';
@@ -41,13 +41,13 @@ gulp.task('watch', function () {
 
 
 // Запуск BrowserSync
-////    browserSync.init({
-//        server: {
-//            baseDir: "./"
-//        },
-//        port: 9000
-//    });
-//});
+    browserSync.init({
+        server: {
+            baseDir: "./"
+        },
+        port: 9000
+    });
+});
 
 // Подзадача для запуска сборщика SCSS файлов
 gulp.task('sass', function () {

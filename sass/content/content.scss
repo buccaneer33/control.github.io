@@ -16,23 +16,24 @@
 
       &__text-zone{
         /*background-color: #ccc;*/
-        min-height:305px;
+        min-height:290px;
         max-height:20vh;
         width: 100%;
-        min-width: 400px;
+        min-width: 395px;
         font: $font-size $font-family;
         line-height: 26px;
-        letter-spacing: -0.1px;
+        letter-spacing: 0px;
         color: #646464;
         overflow-y: auto;
-        padding: 0px 3px 2px 2px;
+        padding: 0 0px 2px 3px;
         z-index: 1;
         box-sizing: border-box;
+        font-weight: 300;
       }
 
       &__header{
         margin-top: 5px;
-        margin-bottom: 0;
+        margin-bottom: 17px;
         font: 35px 'Fira Sans';
         color: $color2-d_gray;
         font-weight: 600;
@@ -41,22 +42,23 @@
 
       }
       &__button-zone{
-        height: 153px;
-        width: 100%;
+        height: 94px;
+        width: 101%;
         padding-right: 0px;
         box-sizing: border-box;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
         flex-direction: row;
       }
 
       &__button{
         //color: $color5-red;
-        width: 173px;
+        width: 174px;
+        margin-right: 1px;
         //border: 2px solid $color5-red;
         border-radius: 20px;
-        padding: 10px 10px;
+        padding: 9px 0px;
         text-align: center;
         box-sizing: border-box;
         cursor: pointer;
@@ -88,7 +90,7 @@
           content: "\f019";
           font-family: FontAwesome;
           color:inherit;
-          padding-right:10px
+          padding-right:9px
         }
       }
 }
