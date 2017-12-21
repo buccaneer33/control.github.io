@@ -13,25 +13,30 @@
 
 }
 .career_photo{
-      padding: 7px 0px 0 2px;
+      padding: 7px 0 0 5px;
       //background-color: #cfc;
       flex-basis: 237px;
       overflow: visible;
       width: 180px;
 
-      &__img{
+      &__img-block{
         width: 220px;
         height: 220px;
         border: 1px solid inherit;
         border-radius: 9px;
+        overflow: hidden;
       }
+
+      &__img{
+        margin: -7px 0 0 -92px;
+      }
+
       &__h{
         font: 35px 'Fira Sans';
-        font-weight: 600;
+        font-weight: 500;
         color: $color2-d_gray;
         min-width: 230px;
-        margin-top: 0;
-        margin-bottom: 25px;
+        margin: 2px 0 25px -1px;
         padding: 0px;
         overflow: visible;
       }
