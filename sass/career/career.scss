@@ -17,7 +17,7 @@
       z-index: 2;
       top: 127px;
       left: 62px;
-      width: 1.5px;
+      width: 1px;
       height: 64%;
 
 
@@ -70,13 +70,15 @@
 
     &__H{
         margin: 5px;
-        font: 21px 'Fira Sans';
-        font-weight: 500;
+        font: 20px $font-family;
+        font-weight: 400;
+        letter-spacing: 0.5px;
     }
     &__p{
         margin: 5px;
-        font-weight: 600;
-        font: 18px 'Fira Sans';
+        font-weight: 500;
+        font: 18px $font-family;
+        letter-spacing: 0.1px;
     }
     &__content{
         border-radius: 9px;

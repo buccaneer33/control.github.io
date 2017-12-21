@@ -28,15 +28,15 @@
       }
 
       &__img{
-        margin: -7px 0 0 -92px;
+        margin: -6px 0 0 -92px;
       }
 
       &__h{
-        font: 35px 'Fira Sans';
+        font: 35px $font-family;
         font-weight: 500;
         color: $color2-d_gray;
         min-width: 230px;
-        margin: 2px 0 25px -1px;
+        margin: 1px 0 25px 0px;
         padding: 0px;
         overflow: visible;
       }
