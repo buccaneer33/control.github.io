@@ -1,8 +1,8 @@
 .social{
-  width: 113px;
+  width: 115px;
   height: 30px;
-  padding: 0 0px 0 0;
-  margin-right: -4px;
+  padding: 0;
+  margin-right: -6px;
 
 
       &--flexbox{
@@ -66,4 +66,24 @@
           left: 50%;
         }
       }
+}
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .social{
+
+       width: 36vw;
+
+ }
 }

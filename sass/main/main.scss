@@ -1,9 +1,7 @@
 .sidebar{
   padding: 11px 0px;
-  margin: 0 16px 0 0;
-
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  margin: 0 0px 0 0;
+  box-sizing: content-box;
   //background-color: #ccc;
   flex-basis: 220px;
 }
@@ -31,14 +29,40 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+ .sidebar{
+   padding: 11px 0px;
+   margin: 0 0px 0 0;
+    box-sizing: content-box;
+   background-color: #ccc;
+   flex-basis: 730px;
+ }
+ .main{
+           flex-grow: 10;
+       flex-basis: 250px;
+       flex-shrink:4;
+   padding-top: 90px;
+
+   &--flexbox{
+     display: flex;
+     align-items: stretch;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     height: 100%;
+   }
+ }
 }
 
 @media screen and (max-width: 520px) {
  /* Smapthone (мобильный телефон) */
  .sidebar{
    //background-color: #ccc;
-   flex-basis: 100%;
-   padding: 0;
-   margin: 0;
+   flex-basis: 98%;
+    padding: 0 1%;
+    margin: 0;
+    height: 27px;
+ }
+ .main{
+//margin-left: 10px;
+    // width: 100vw;
  }
 }

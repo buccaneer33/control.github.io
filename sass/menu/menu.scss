@@ -14,7 +14,7 @@
         vertical-align: middle;
         //color: #414141;
         cursor: pointer;
-        padding-right: 29px;
+        padding-right: 30px;
         animation-name: menuBlinkUp;
         animation-timing-function:ease-in-out;
         animation-duration: 0.3s;
@@ -38,7 +38,7 @@
           line-height: 45px;
           vertical-align: middle;
           cursor: pointer;
-          padding-right: 29px;
+          padding-right: 30px;
           background: url('../img/menu__item--active.png') !important;
           background-repeat: no-repeat !important;
           background-position: right !important;
@@ -99,22 +99,126 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+
+ .menu{
+   @include flexbox(flex, row, center, flex-start, wrap);
+     color: #414141;
+     text-decoration: none;
+     font: 14px $font-family;
+     font-weight: normal;
+     text-align: left;
+     list-style-type:none;
+     text-decoration: none;
+     margin:0;
+     padding: 0;
+
+
+
+       &__item{
+          padding-right: 5px;
+          line-height: 27px;
+          vertical-align: middle;
+          //color: #414141;
+          cursor: pointer;
+          margin-right: 6%;
+          padding-right: 0px;
+
+
+
+          &--activ{
+                    background: transparent;
+                    line-height: 27px;
+                    color:$color4-blue;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    padding-right: 0px;
+                    background:none !important;
+                    margin-right: 6%;
+                    color:$color4-blue !important;
+                    font-weight: 500 !important;
+                  }
+
+
+       }
+       &__about{
+             color: inherit;
+             text-decoration: none;
+
+             &::before{
+               content: "\f21b";
+               font-family: FontAwesome;
+               color:inherit;
+               padding-right:9px
+             }
+       }
+
+       &__career{
+           color: inherit;
+           text-decoration: none;
+
+             &::before{
+               content: "\f135";
+             	font-family: FontAwesome;
+             	color:inherit;
+             	padding-right:8px
+             }
+
+
+       }
+       &__portfolio{
+           color: inherit;
+           text-decoration: none;
+
+             &::before{
+               content: "\f0b1";
+               font-family: FontAwesome;
+               color:inherit;
+               padding-right:10px
+             }
+
+
+       }
+     }
 }
 
 @media screen and (max-width: 520px) {
  /* Smapthone (мобильный телефон) */
  .menu{
-   @include flexbox(flex, row, center, space-between, wrap);
+   @include flexbox(flex, row, center, flex-start, wrap);
+     color: #414141;
+     text-decoration: none;
+     font: 14px $font-family;
+     font-weight: normal;
+     text-align: left;
+     list-style-type:none;
+     text-decoration: none;
+     margin:0;
+     padding: 0;
+
 
 
        &__item{
           padding-right: 5px;
+          line-height: 27px;
+          vertical-align: middle;
+          //color: #414141;
+          cursor: pointer;
+          margin-right: 6%;
+          padding-right: 0px;
+
+
 
           &--activ{
                     background: transparent;
-
+                    line-height: 27px;
                     color:$color4-blue;
-                    font-weight: bold !important;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    padding-right: 0px;
+                    background:none !important;
+                    margin-right: 6%;
+                    color:$color4-blue !important;
+                    font-weight: 500 !important;
                   }
 
 

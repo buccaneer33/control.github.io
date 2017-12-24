@@ -26,6 +26,24 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+ .person{
+   max-width: 400px;
+
+   &__image{
+     height: 58px;
+     width: 58px;
+     border: 2px solid #bdbdbd;
+     border-radius: 50%;
+   }
+   &__name{
+     padding: 0px 18px 0 18px;
+     font: $font-size $font-family;
+     color: $color2-d_gray;
+     line-height: 28px;
+     font-weight: 400;
+     letter-spacing: 0.1px;
+   }
+ }
 }
 
 @media screen and (max-width: 520px) {
@@ -35,9 +53,11 @@
 
    &__name{
      padding: 0 18px;
-     font: 14px $font-family;
+     font: 15px $font-family;
      color: $color2-d_gray;
      line-height: 20px;
+     letter-spacing: -0.6px;
+     margin: -3px 0 0 0;
    }
  }
 

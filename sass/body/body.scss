@@ -28,6 +28,10 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+ .wrapper{
+   max-width: 730px;
+   margin: 0 auto;
+ }
 }
 
 @media screen and (max-width: 520px) {

@@ -47,14 +47,14 @@ gulp.task('watch', function () {
 // Запуск BrowserSync
 
 gulp.task('server', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        },
-        port: 9000,
-        open: false,
-		reloadDelay: 1000
-    });
+    //browserSync.init({
+    //    server: {
+    //        baseDir: "./"
+    //    },
+    //    port: 9000,
+    //    open: false,
+	//	reloadDelay: 4000
+    //});
 });
 
 
@@ -66,7 +66,7 @@ gulp.task('sass', function () {
 
         .pipe(gulpif(ENV != 'production', sourceMaps.init()))
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
+        .pipe(autoprefixer({browsers: ['last 3 versions'], cascade: false}))
         .pipe(cleanCSS())
         .pipe(concat('./src/style.css'))
         .pipe(gulpif(ENV != 'production', sourceMaps.write()))

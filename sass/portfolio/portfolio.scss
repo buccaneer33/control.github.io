@@ -1,7 +1,8 @@
 .portfolio{
   flex-grow: 1;
-  flex-basis: 700px;
+  flex-basis: 720px;
   padding:0;
+
 
     &--flexbox{
         display: flex;
@@ -15,13 +16,13 @@
       font:35px $font-family;
       margin-bottom: 5px;
       font-weight: 500;
-      margin:  8px 0px 22px;
+      margin: 8px 0 22px 20px;
     }
     &__item{
-      flex-basis:222px;
+      flex-basis:220px;
       box-sizing: border-box;
       background-color: #fff;
-      margin: 0 10px 15px 0;
+      margin: 0 -1px 20px 21px;
       border-radius: 10px;
       cursor: pointer;
       box-shadow: 1px 1px 1px rgba(221, 221, 221, 1),
@@ -48,21 +49,25 @@
       border-radius: 10px 10px 0px 0px;
     }
     &__link{
-
-      padding: 16px 20px 0;
+      padding: 15px 18px 0;
+      margin: 0 0 0 0px;
     }
     &__link-a{
       font: 21px $font-family;
       color: $color4-blue;
       text-decoration: none;
+      letter-spacing: 0.1px;
+
     }
     &__link-desk{
-        padding: 0px 20px 5px;
+        padding: 2px 20px 5px;
         font: 14px $font-family;
         color:$color2-d_gray;
+        letter-spacing: -0.1px;
+        opacity: 0.85;
     }
     &__type{
-      padding: 12px 24px 17px;
+      padding: 9px 20px 16px;
       font: 14px $font-family;
       font-weight: bold;
       color: #aeaeae;
@@ -71,13 +76,17 @@
         content: '\f10b';
         font-family: FontAwesome;
         color: inherit;
-        padding-right: 5px;
+        font-size: 18px;
+
+        padding-right: 6px;
       }
       &-desc::before{
         content: '\f108';
         font-family: FontAwesome;
+        font-size: 18px;
+
         color: inherit;
-        padding-right: 5px;
+        padding-right: 6px;
       }
     }
 
@@ -98,11 +107,15 @@
  /* Smapthone (мобильный телефон) */
  .portfolio{
    flex-grow: 1;
-   padding:0;
+   padding: 0 0 15px 0;
+
    &__h{
      font:35px $font-family;
      margin-bottom: 5px;
      text-align: center;
+     margin: 30px 0 4px -1px;
+     font-weight: 500;
+     color: #414141;
    }
 
 
@@ -115,10 +128,68 @@
          //background-color: #ddd;
      }
      &__item{
+       flex-basis: 310px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin: 17px 2px 6px 6px;
+        border-radius: 12px;
+        padding: 0 0 2px 0;
+     }
+     &__img-cont{
+       padding: 0;
+       margin: 0;
+       width: 100%;
+       height: 235px;
+       border-radius: 12px 12px 0px 0px;
+     }
+     &__img{
+       width: 100%;
+       height: 235px;
+       border-radius: 12px 12px 0px 0px;
+     }
+     &__link{
+       padding: 12px 17px 0;
+       margin: 0 0 0 0px;
+     }
 
+     &__link-a{
+       font: 24px $font-family;
+       color: $color4-blue;
+       text-decoration: none;
+       letter-spacing: 0.1px;
 
-       margin: 20px;
+     }
+     &__link-desk{
+         padding: 2px 19px 5px;
+         font: 16px $font-family;
+         color:$color2-d_gray;
+         letter-spacing: -0.1px;
+         opacity: 0.85;
+     }
+     &__type{
+        padding: 9px 20px 13px;
+       font: 17px $font-family;
+       font-weight: 500;
+       color: #aeaeae;
+       letter-spacing: -0.6px;
 
+       &-app::before{
+         content: '\f10b';
+         font-family: FontAwesome;
+         color: inherit;
+         font-size: 18px;
+
+         padding-right: 10px;
+       }
+       &-desc::before{
+         content: '\f108';
+         font-family: FontAwesome;
+         font-size: 18px;
+
+         color: inherit;
+         padding-right: 10px;
+       }
      }
 
 

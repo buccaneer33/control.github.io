@@ -1,15 +1,44 @@
 .confidentiality{
-      padding-right: 0;
+
+      margin: 0 0 2px 3px;
 
       &__link{
         color:$color4-sl_gray;
         text-decoration: none;
-        font: 14px $font-family;
+        font: 13px $font-family;
         font-weight: 300;
+        letter-spacing: 0.55px;
 
         &::before{
             content: '\00A9';
-            padding-right: 5px;
+            padding-right: 4px;
         }
       }
+}
+
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+ .confidentiality{
+
+       margin: 15px 0 15px 0;
+       width: 60vw;
+       text-align: center;
+
+       &__link{
+        line-height: 13px;
+       }
+
+ }
 }
