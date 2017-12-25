@@ -77,6 +77,12 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+ .social{
+   width: 115px;
+   height: 30px;
+   padding: 0 3px 0 0;
+   margin-right: -6px;
+}
 }
 
 @media screen and (max-width: 520px) {

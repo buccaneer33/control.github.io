@@ -102,6 +102,103 @@
 
 @media screen and (max-width: 768px) {
  /* Tablet (планшет) */
+ .portfolio{
+    flex-basis: 740px;
+   padding: 0 0 0 0px;
+   margin-left: -10px;
+   margin-bottom: 140px;
+
+
+     &--flexbox{
+         display: flex;
+         align-items: stretch;
+         flex-wrap: wrap;
+         flex-direction: row;
+         justify-content: flex-start;
+         //background-color: #ddd;
+         width: 100%;
+         min-width: 750px;
+         margin: 0;
+         padding: 0;
+     }
+     &__h{
+       font:35px $font-family;
+       margin-bottom: 5px;
+       font-weight: 500;
+       margin: 3px 0 22px 14px;
+       color: #414141;
+     }
+     &__item{
+       flex-basis: 228px;
+       box-sizing: border-box;
+       background-color: #fff;
+       margin: 0 4px 22px 16px;
+       border-radius: 10px;
+       cursor: pointer;
+       box-shadow: 1px 1px 1px rgba(221, 221, 221, 1),
+                   -1px 1px 1px rgba(221, 221, 221, 1),
+                   1px -1px 1px rgba(221, 221, 221, 1),
+                   -1px -1px 1px rgba(221, 221, 221, 1) ;
+
+       &:hover .portfolio__link-a{
+         color: $color5-red;
+       }
+     }
+     &__img-cont{
+       padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 182px;
+      border-radius: 10px 10px 0 0
+     }
+     &__img{
+       width: 100%;
+       height: 178px;
+       border-radius: 10px 10px 0 0;
+     }
+     &__link{
+       padding: 12px 18px 0px;
+       margin: 0 0 0 0px;
+     }
+     &__link-a{
+       font: 21px $font-family;
+       color: $color4-blue;
+       text-decoration: none;
+       letter-spacing: 0.1px;
+
+     }
+     &__link-desk{
+         padding: 2px 20px 5px;
+         font: 14px $font-family;
+         color:$color2-d_gray;
+         letter-spacing: -0.1px;
+         opacity: 0.85;
+     }
+     &__type{
+      padding: 9px 20px 19px;
+       font: 14px $font-family;
+       font-weight: bold;
+       color: #aeaeae;
+
+       &-app::before{
+         content: '\f10b';
+         font-family: FontAwesome;
+         color: inherit;
+         font-size: 18px;
+
+         padding-right: 6px;
+       }
+       &-desc::before{
+         content: '\f108';
+         font-family: FontAwesome;
+         font-size: 18px;
+
+         color: inherit;
+         padding-right: 6px;
+       }
+     }
+
+ }
 }
 
 @media screen and (max-width: 520px) {

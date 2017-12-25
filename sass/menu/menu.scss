@@ -104,7 +104,7 @@
    @include flexbox(flex, row, center, flex-start, wrap);
      color: #414141;
      text-decoration: none;
-     font: 14px $font-family;
+     font: 18px $font-family;
      font-weight: normal;
      text-align: left;
      list-style-type:none;
@@ -120,7 +120,7 @@
           vertical-align: middle;
           //color: #414141;
           cursor: pointer;
-          margin-right: 6%;
+          margin-right: 4%;
           padding-right: 0px;
 
 
@@ -133,7 +133,7 @@
                     cursor: pointer;
                     padding-right: 0px;
                     background:none !important;
-                    margin-right: 6%;
+                    margin-right: 4%;
                     color:$color4-blue !important;
                     font-weight: 500 !important;
                   }
