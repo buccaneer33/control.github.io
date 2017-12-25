@@ -317,13 +317,9 @@
              &__button{
                  border: none;
                  padding: 0px 0;
-                 font: 0 $font-family;
-                 //font-weight: bold;
-                // color: $color4-blue;
-                // background-color: #fff;
-                // cursor: pointer;
-                // overflow: hidden;
-                // width: 60px;
+                 font-size: 0px;
+                 color:inherit;
+
 
 
                  &::after{

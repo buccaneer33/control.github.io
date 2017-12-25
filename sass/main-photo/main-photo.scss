@@ -22,7 +22,7 @@
       &__img-block{
         width: 220px;
         height: 220px;
-        border: 1px solid inherit;
+        border: 1px solid transparent;
         border-radius: 9px;
         overflow: hidden;
       }
@@ -81,7 +81,7 @@
        &__img-block{
          width: 220px;
          height: 219px;
-         border: 1px solid inherit;
+         border: 1px solid transparent;
          border-radius: 9px;
          overflow: hidden;
          margin: 0 0 0 22px;
