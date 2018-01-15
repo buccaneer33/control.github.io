@@ -1,0 +1,46 @@
+.footer{
+      background-color:$color2-d_gray;
+      height: 50px;
+      flex-basis: 50px;
+      flex-shrink:1;
+
+      &--flexbox{
+
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: space-between;
+      }
+}
+
+@media screen and (max-width: 1200px) {
+ /* HD Monitor (стационарный компьютер) */
+}
+
+@media screen and (max-width: 992px) {
+ /* Notebook (ноутбук) */
+}
+
+@media screen and (max-width: 768px) {
+ /* Tablet (планшет) */
+}
+
+@media screen and (max-width: 520px) {
+ /* Smapthone (мобильный телефон) */
+     .footer{
+     background-color:$color2-d_gray;
+    //background-color: #ccc;
+     height: 114px;
+     flex-basis: 114px;
+     flex-shrink:1;
+     width: 100vw;
+     //margin-left: 10px;
+    }
+    .footer--flexbox{
+      height: 114px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+}

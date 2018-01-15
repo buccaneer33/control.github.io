@@ -1,5 +1,5 @@
 {
-  "name": "01_hello.ere",
+  "name": "02_control.ere",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/buccaneer33/new-repp.git"
+    "url": "git+https://github.com/buccaneer33/control.github.io.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/buccaneer33/new-repp/issues"
+    "url": "https://github.com/buccaneer33/control.github.io/issues"
   },
-  "homepage": "https://github.com/buccaneer33/new-repp#readme",
+  "homepage": "https://github.com/buccaneer33/control.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
@@ -27,7 +27,9 @@
     "gulp-clean-css": "^3.9.0",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
+    "gulp-rigger": "^0.5.8",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.1"
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0"
   }
 }
