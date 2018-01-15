@@ -13,7 +13,7 @@
 
 
       &--flexbox{
-          @include flexbox(flex,column,stretch,flex-start,nowrap);
+          @include flexbox(flex,column,center,flex-start,nowrap);
           }
 }
 .wrapper{

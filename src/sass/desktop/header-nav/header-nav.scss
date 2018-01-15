@@ -1,0 +1,26 @@
+.header__navigation{
+    padding: 25px 0;
+    width: 100%;
+    //border: 1px solid #fff;
+
+  &-list{
+    @include flexbox(flex,row,stretch,space-around,nowrap);
+    width: 60%;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/insayur-logo.svg);
+      top: 84px;
+      left: 182px;
+    }
+  }
+  &-item{
+    display: block;
+    padding: 0 15px;
+  }
+
+  &-a{
+    text-decoration: none;
+    color: #fff;
+  }
+}

@@ -9,19 +9,26 @@
   background-position: right bottom;
 
   &--flexbox{
-    @include flexbox(flex,column,stretch,flex-start,nowrap);
+    @include flexbox(flex,column,center,flex-start,nowrap);
 
   }
   &__contacts{
       @include flexbox(flex,row,stretch,space-evenly,nowrap);
       background-color: #333333;
-      color: #fff;
       font-size: 13px;
       font-weight: 300;
       height: 50px;
+      width: 100%;
 
+      &--item{
+        display: block;
+        color: #fff;
+      }
       &--phones{
         position: relative;
+        color: #fff;
+        text-decoration: none;
+
         &::before{
           position: absolute;
           content: url(../img/svg/phone.svg);
@@ -32,6 +39,9 @@
       }
       &--callback{
         position: relative;
+        color: #fff;
+        text-decoration: none;
+
         &::before{
           position: absolute;
           content: url(../img/svg/callback.svg);
@@ -41,6 +51,9 @@
     }
       &--address{
         position: relative;
+        color: #fff;
+        text-decoration: none;
+
         &::before{
           position: absolute;
           content: url(../img/svg/location.svg);
@@ -53,18 +66,28 @@
         width: 231px;
         height: 100%;
         background-color: #4caf50;
+        @include flexbox(flex,row,center,center,nowrap);
+      }
+      &--recc-a{
+        position: relative;
+        color: #fff;
+        text-decoration: none;
+
         &::before{
           position: absolute;
           content: url(../img/svg/appointment-register.svg);
           top: -2px;
           left: -27px;
       }
+    }
   }
-}
+
   &__wrapper{
     //border: 1px solid #fff;
     @include flexbox(flex,row,center,space-evenly,nowrap);
     width: 100%;
+    max-width: 1920px;
+    min-width: 1280px;
   }
 
 }
