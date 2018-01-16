@@ -1,5 +1,5 @@
 .services{
-  padding: 56px 0;
+  padding: 43px 0;
   width: 100%;
   background-color: #f2f2f2;
 
@@ -8,12 +8,15 @@
       margin: 0 auto;
   }
   &__header{
-      margin-bottom: 32px;
-      font-weight: 400;
+      margin-bottom: 7px;
+      font-weight: 300;
+      padding-left: 17px;
 
     &--h{
         color: #008e70;
         font-size: 32px;
+        letter-spacing: 2.3px;
+        margin: 0;
 
     }
   }
@@ -36,93 +39,206 @@
     box-sizing: border-box;
     position: relative;
 
-    &--price{
+    &-status{
+      visibility: visible;
+      position: absolute;
+      top: 35px;
+      left: 32px;
+
+    }
+    &-status--hover{
+      visibility: hidden;
+      position: absolute;
+      top: 20px;
+      left: 32px;
+    }
+
+
+    &-price{
       color: inherit;
       visibility: hidden;
       font-size: 12px;
       display: block;
-      margin: 0px 0 0 120px;
+      margin: 28px 0 0 87px;
     }
-    &--cure{
+    ///////////////////
+    &-cure{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 2px 0 0 89px;
+      letter-spacing: 1px;
+
 
     &::before{
       position: absolute;
       content: url(../img/svg/services/Treatment.svg);
-      top: 20px;
-      left: 32px;
+      top: -14px;
+      left: 0px;
     }
-    }
-    &--implant{
+    &--hov{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 17px 0 0 89px;
+      letter-spacing: 1px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/Treatment-hover.svg);
+      top: 1px;
+      left: 1px;
+    }
+    }
+    }
+    /////////////////////
+    &-implant{
+      display: block;
+      margin: 3px 0 0 89px;
+      letter-spacing: 1.1px;
+
 
     &::before{
       position: absolute;
       content: url(../img/svg/services/implant.svg);
-      top: 20px;
-      left: 32px;
+      top: -9px;
+      left: 0px;
+    }
+    &--hov{
+      display: block;
+      margin: 17px 0 0 89px;
+      letter-spacing: 1px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/implant-hover.svg);
+      top: 6px;
+      left: 0px;
+    }
     }
 
     }
-    &--protez{
+    ///////////////////
+    &-protez{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 2px 0 0 89px;
+      letter-spacing: 1.2px;
+
 
     &::before{
       position: absolute;
       content: url(../img/svg/services/prothesis.svg);
-      top: 20px;
-      left: 32px;
+      top: -9px;
+      left: 0px;
+    }
+    &--hov{
+      display: block;
+      margin: 17px 0 0 88px;
+      letter-spacing: 1.2px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/prothesis-hover.svg);
+      top: 6px;
+      left: 0px;
+    }
     }
 
     }
-    &--orto{
+    ///////////////
+    &-orto{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 2px 0 0 89px;
+      letter-spacing: 1.2px;
+
 
     &::before{
       position: absolute;
-      content: url(../img/svg/services/Ortondont.svg);
-      top: 20px;
-      left: 32px;
+      content: url(../img/svg/services/ortondont.svg);
+      top: 1px;
+      left: 1px;
+    }
+    &--hov{
+      display: block;
+      margin: 17px 0 0 89px;
+      letter-spacing: 1.2px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/ortondont-hover.svg);
+      top: 16px;
+      left: 1px;
+    }
     }
 
     }
-    &--kids{
+    /////////
+    &-kids{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 3px 0 0 89px;
+      letter-spacing: 0.8px;
+
 
     &::before{
       position: absolute;
       content: url(../img/svg/services/kids.svg);
-      top: 20px;
-      left: 32px;
+      top: -12px;
+      left: 0px;
+    }
+    &--hov{
+      display: block;
+      margin: 17px 0 0 89px;
+      letter-spacing: 0.8px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/kids-hover.svg);
+      top: 2px;
+      left: 0px;
+    }
     }
 
     }
-    &--white{
+    /////////
+    &-white{
       display: block;
-      margin: 10px 0 0 120px;
+      margin: 3px 0 0 88px;
+      letter-spacing: 1px;
+
 
     &::before{
       position: absolute;
       content: url(../img/svg/services/whitening.svg);
-      top: 20px;
-      left: 32px;
+      top: -9px;
+      left: 1px;
+    }
+    &--hov{
+      display: block;
+      margin: 17px 0 0 89px;
+      letter-spacing: 1px;
+
+      &::before{
+      position: absolute;
+      content: url(../img/svg/services/whitening-hover.svg);
+      top: 6px;
+      left: 1px;
+    }
     }
 
     }
 
-
-
-    &:hover{
-      background-color: #008e70;
-      color: #fff;
-    }
   }
 }
-.services__item:hover .services__item--price{
+.services__item:hover .services__item-price{
   visibility: visible;
+  transition: 0.5s;
+}
+.services__item:hover .services__item-status{
+  visibility: hidden;
+  transition: 0.5s;
+}
+.services__item:hover .services__item-status--hover{
+  visibility: visible;
+  transition: 0.5s;
+}
+.services__item:hover{
+  background-color: #008e70;
+  color: #fff;
+ // transition: 0.3s;
 }

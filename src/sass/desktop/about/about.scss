@@ -1,6 +1,29 @@
 .about{
-  flex-basis: 600px;
-  height: 600px;
   width: 100%;
-  background-color: #cdc;
+  height: 401px;
+  background: url(../img/about.jpg) no-repeat;
+  background-size: 1920px;
+  background-position: left 47.6% top -1%;
+  position: relative;
+  //padding: 56px 0;
+
+  &:before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+  }
+  &__wrapper{
+      width: 1056px;
+      margin: 0 auto;
+  }
+  &__header{
+
+      &-h{
+        color:#fff;
+        font-size: 32px;
+      }
+  }
+
 }
