@@ -1,19 +1,19 @@
 .body{
-  background-color: #f6f6f6;
-  width: calc(100% - 10px);
-  max-width: 1910px;
-  min-width: 1270px;
-  height: calc(100vh - 10px);
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1147px;
+  //height: 100vh;
   min-height: 100%;
   margin: 0 auto;
   overflow: auto;
   min-height: 300px;
-  padding: 5px;
+
   font-family: 'PT_Sans-Web-Regular',  sans-serif;
 
 
       &--flexbox{
-          @include flexbox(flex,column,center,flex-start,nowrap);
+          @include flexbox(flex,column,stretch,flex-start,nowrap);
           }
 }
 .wrapper{

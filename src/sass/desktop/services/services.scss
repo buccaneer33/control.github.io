@@ -1,0 +1,128 @@
+.services{
+  padding: 56px 0;
+  width: 100%;
+  background-color: #f2f2f2;
+
+  &__wrapper{
+      width: 1056px;
+      margin: 0 auto;
+  }
+  &__header{
+      margin-bottom: 32px;
+      font-weight: 400;
+
+    &--h{
+        color: #008e70;
+        font-size: 32px;
+
+    }
+  }
+  &__items-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__item{
+    background-color: #fff;
+    height: 100px;
+    width: 320px;
+    margin: 16px 16px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 18px;
+    padding: 32px 32px;
+    box-sizing: border-box;
+    position: relative;
+
+    &--price{
+      color: inherit;
+      visibility: hidden;
+      font-size: 12px;
+      display: block;
+      margin: 0px 0 0 120px;
+    }
+    &--cure{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/Treatment.svg);
+      top: 20px;
+      left: 32px;
+    }
+    }
+    &--implant{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/implant.svg);
+      top: 20px;
+      left: 32px;
+    }
+
+    }
+    &--protez{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/prothesis.svg);
+      top: 20px;
+      left: 32px;
+    }
+
+    }
+    &--orto{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/Ortondont.svg);
+      top: 20px;
+      left: 32px;
+    }
+
+    }
+    &--kids{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/kids.svg);
+      top: 20px;
+      left: 32px;
+    }
+
+    }
+    &--white{
+      display: block;
+      margin: 10px 0 0 120px;
+
+    &::before{
+      position: absolute;
+      content: url(../img/svg/services/whitening.svg);
+      top: 20px;
+      left: 32px;
+    }
+
+    }
+
+
+
+    &:hover{
+      background-color: #008e70;
+      color: #fff;
+    }
+  }
+}
+.services__item:hover .services__item--price{
+  visibility: visible;
+}

@@ -1,12 +1,13 @@
 .header{
+  flex-basis: 600px;
   height: 600px;
   width: 100%;
   //max-width: 1920px;
   //min-width: 1280px;
   background-color: #dcc;
   background: url(../img/1st-screen-1920x1080-dark.jpg) no-repeat;
-  background-size:100%;
-  background-position: right bottom;
+  background-size: 165%;
+  background-position: left 49% top -1%;
 
   &--flexbox{
     @include flexbox(flex,column,center,flex-start,nowrap);
@@ -15,7 +16,7 @@
   &__contacts{
       @include flexbox(flex,row,stretch,space-evenly,nowrap);
       background-color: #333333;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 300;
       height: 50px;
       width: 100%;
@@ -23,6 +24,8 @@
       &--item{
         display: block;
         color: #fff;
+        letter-spacing: 0.5px;
+
       }
       &--phones{
         position: relative;
@@ -32,8 +35,8 @@
         &::before{
           position: absolute;
           content: url(../img/svg/phone.svg);
-          top: -2px;
-          left: -27px;
+          top: -1px;
+          left: -36px;
 
         }
       }
@@ -45,8 +48,9 @@
         &::before{
           position: absolute;
           content: url(../img/svg/callback.svg);
-          top: -2px;
-          left: -27px;
+          top: -1px;
+          left: -36px;
+
       }
     }
       &--address{
@@ -57,8 +61,8 @@
         &::before{
           position: absolute;
           content: url(../img/svg/location.svg);
-          top: -2px;
-          left: -27px;
+          top: -1px;
+          left: -36px;
       }
     }
       &--recc-btn{
@@ -66,6 +70,7 @@
         width: 231px;
         height: 100%;
         background-color: #4caf50;
+        align-self: flex-end;
         @include flexbox(flex,row,center,center,nowrap);
       }
       &--recc-a{
@@ -84,10 +89,11 @@
 
   &__wrapper{
     //border: 1px solid #fff;
-    @include flexbox(flex,row,center,space-evenly,nowrap);
-    width: 100%;
-    max-width: 1920px;
-    min-width: 1280px;
+    @include flexbox(flex,row,center,space-between,nowrap);
+    width: 1056px;
+    //padding: 0 10px;
+    height: 50px;
+    margin: 0 auto;
   }
 
 }

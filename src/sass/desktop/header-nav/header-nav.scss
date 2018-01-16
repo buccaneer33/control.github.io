@@ -4,7 +4,7 @@
     //border: 1px solid #fff;
 
   &-list{
-    @include flexbox(flex,row,stretch,space-around,nowrap);
+    @include flexbox(flex,row,stretch,space-evenly,nowrap);
     width: 60%;
 
     &::before{
