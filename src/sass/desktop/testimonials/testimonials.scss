@@ -1,0 +1,67 @@
+.testimonials{
+  background-color: #fff;
+  padding: 32px 0;
+
+  &__wrapper{
+    width: 1056px;
+    margin: 0 auto;
+  }
+
+  &__header{
+
+    &--h{
+      color:#008e70;
+      font-size: 32px;
+    }
+  }
+
+  &__buttons{
+    display: inline-block;
+  }
+  &__button{
+    display: inline-block;
+    margin: 0 16px 0 0;
+
+    &-write{
+      display: block;
+      height: 60px;
+      width: 232px;
+      color: #fff;
+      background-color: #4cb050;
+      border: 1px solid #4cb050;
+      font-size: 12px;
+      box-sizing: border-box;
+      text-decoration: none;
+      @include flexbox(flex,row,center,center,nowrap);
+      transition: 0.5s;
+
+      &:hover{
+        color: #fff;
+        background-color: #8cc63f;
+        border: 1px solid #8cc63f;
+        transition: 0.5s;
+      }
+    }
+
+    &-view{
+      display: block;
+      height: 60px;
+      width: 232px;
+      color: #333333;
+      background-color: #fff;
+      border: 1px solid #f2f2f2;
+      font-size: 12px;
+      box-sizing: border-box;
+      text-decoration: none;
+      @include flexbox(flex,row,center,center,nowrap);
+      transition: 0.5s;
+
+      &:hover{
+        color: #333333;
+        background-color: #e6e6e6;
+        border: 1px solid #e6e6e6;
+        transition: 0.5s;
+      }
+    }
+  }
+}
