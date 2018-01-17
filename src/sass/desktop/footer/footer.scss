@@ -1,0 +1,83 @@
+.footer{
+  background-color: #333333;
+
+  &__wrapper{
+    width: 1056px;
+    margin: 0 auto;
+  }
+  &__top{
+    border-bottom: 1px solid #999999;
+    padding: 40px 0;
+    @include flexbox(flex,row,center,space-between,nowrap);
+  }
+
+
+  &__social{
+    width: 290px;
+    @include flexbox(flex,row,center,flex-end,nowrap);
+
+
+
+    &--vk{
+      content: url(../img/svg/vk.svg);
+      cursor: pointer;
+      margin-left: 17px;
+
+      &:hover{
+        content: url(../img/svg/vk-hover.svg);
+      }
+    }
+    &--fb{
+      content: url(../img/svg/fb.svg);
+      cursor: pointer;
+      margin-left: 17px;
+
+      &:hover{
+        content: url(../img/svg/fb-hover.svg);
+      }
+    }
+    &--insta{
+      content: url(../img/svg/insta.svg);
+      cursor: pointer;
+      margin-left: 17px;
+
+      &:hover{
+        content: url(../img/svg/insta-hover.svg);
+      }
+    }
+    &--ok{
+      content: url(../img/svg/odnoklassniki.svg);
+      cursor: pointer;
+      margin-left: 17px;
+
+      &:hover{
+        content: url(../img/svg/odnoklassniki-hover.svg);
+      }
+    }
+  }
+
+  &__bottom{
+    padding: 40px 0;
+    color: #999999;
+    @include flexbox(flex,row,center,space-between,nowrap);
+
+    &-licens--a{
+      text-decoration: underline;
+      cursor: pointer;
+      color: #999999;
+    }
+    &-confed--a{
+      text-decoration: underline;
+      cursor: pointer;
+      color: #999999;
+    }
+    &-weblime--a{
+      text-decoration: underline;
+      cursor: pointer;
+      color: #999999;
+
+    }
+
+  }
+
+}
