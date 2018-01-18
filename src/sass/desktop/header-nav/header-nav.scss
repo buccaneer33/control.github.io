@@ -1,18 +1,28 @@
 .header__navigation{
     padding: 17px 0 25px 0;
     width: 100%;
-    //border: 1px solid #fff;
+
+
+    &--up{
+      background-color: rgba(51, 51, 51, 0);
+      transition: $animation-time;
+    }
+    &--down{
+      background-color: rgba(51, 51, 51, .6);
+      transition: $animation-time;
+    }
+
 
   &-list{
     @include flexbox(flex,row,stretch,space-between,nowrap);
     width: 100%;
-    padding: 0 0 0 130px;
+    padding: 0 0 0 150px;
 
     &::before{
       position: absolute;
       content: url(../img/svg/insayur-logo.svg);
       top: 84px;
-      left: 182px;
+      left: 123px;
     }
   }
   &-item{
