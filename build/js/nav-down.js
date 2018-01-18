@@ -1,27 +1,32 @@
 $(function() {
-    var blockTop = $('.services').offset().top;
-    var CountUpFlag = 0;
-    var $window = $(window);
-    $window.on('load scroll', function() {
-        var top = $window.scrollTop();
-        var height = $window.height();
-        if (top + height >= blockTop && CountUpFlag == 0) {
-            CountUp();
+	var $window = $(window);
+    var blockTop = $('.header__slider').offset().top; //расстояние от верха страницы блока
+	var scrollTop = $window.scrollTop(); //значение на сколько проскролили сверху
+	var CountUpFlag = 0;
+	        if (scrollTop  >= blockTop && CountUpFlag == 0) {
+			toggleDownMenu();
             CountUpFlag = 1;
         }
-		        if (top + height >= blockTop && CountUpFlag == 0) {
-            CountDown();
-            CountUpFlag = 0;
+    $window.on('load scroll', function() {
+		var scrollTop = $window.scrollTop(); //значение на сколько проскролили сверху
+        if (scrollTop  >= blockTop && CountUpFlag == 0) {
+			toggleDownMenu();
+            CountUpFlag = 1;
         }
-		
+		if (scrollTop +30 <= blockTop && CountUpFlag == 1) {
+            toggleUpMenu();
+            CountUpFlag = 0;
+		}	
 		
 		
     });
-    function CountUp() {
-        alert ("123");
+    function toggleDownMenu() {
+        //alert ("Up");
+		$( '#toggleMenu' ).css({"top":"0", "transition":"0.5s"});
+		
     }
-	function CountDown() {
-        alert ("890");
+	function toggleUpMenu() {
+        $( '#toggleMenu' ).css({"top":"-142px", "transition":"0.5s"});
     }
 	
 });

@@ -8,7 +8,7 @@
   background: url(../img/1st-screen-1920x1080-dark.jpg) no-repeat;
   background-size: 165%;
   background-position: left 49% top -1%;
-  padding-top: 142px;
+  //padding-top: 142px;
 
   &--flexbox{
     @include flexbox(flex,column,center,flex-start,nowrap);
@@ -17,9 +17,17 @@
 
   &__menu{
     width: 100%;
-    position: fixed;
+    //position: fixed;
     top: 0;
     z-index: 100;
+
+    &--scroll{
+      width: 100%;
+      position: fixed;
+      top: -142px;
+      z-index: 100;
+
+    }
   }
   &__contacts{
     //  @include flexbox(flex,row,stretch,space-evenly,nowrap);
