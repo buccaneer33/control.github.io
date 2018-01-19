@@ -38,31 +38,28 @@
     padding: 32px 32px;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden;
-
 
     &-status{
+      visibility: visible;
       position: absolute;
-      top: 34%;
+      top: 35px;
       left: 32px;
-      transition: $animation-time;
-
 
     }
     &-status--hover{
+      visibility: hidden;
       position: absolute;
-      top: 120%;
+      top: 20px;
       left: 32px;
-      transition: $animation-time;
     }
 
 
     &-price{
-      position: absolute;
       color: inherit;
+      visibility: hidden;
       font-size: 12px;
       display: block;
-      margin: 0px 0 0 87px;
+      margin: 28px 0 0 87px;
     }
     ///////////////////
     &-cure{
@@ -228,16 +225,20 @@
 
   }
 }
-
+.services__item:hover .services__item-price{
+  visibility: visible;
+  transition: 0.5s;
+}
+.services__item:hover .services__item-status{
+  visibility: hidden;
+  transition: 0.5s;
+}
+.services__item:hover .services__item-status--hover{
+  visibility: visible;
+  transition: 0.5s;
+}
 .services__item:hover{
   background-color: #008e70;
   color: #fff;
-}
-.services__item:hover .services__item-status{
-  top: -120%;
-  transition: $animation-time;
-}
-.services__item:hover .services__item-status--hover{
-  top: 20%;
-  transition: $animation-time;
+ // transition: 0.3s;
 }

@@ -13,20 +13,19 @@ $(function() {
 			toggleDownMenu();
             CountUpFlag = 1;
         }
-		if (scrollTop +30 <= blockTop && CountUpFlag == 1) {
+		if (scrollTop  <= blockTop && CountUpFlag == 1) {
             toggleUpMenu();
             CountUpFlag = 0;
-		}	
-		
-		
+		}
+
+
     });
     function toggleDownMenu() {
-        //alert ("Up");
 		$( '#toggleMenu' ).css({"top":"0", "transition":"0.5s"});
-		
+
     }
 	function toggleUpMenu() {
         $( '#toggleMenu' ).css({"top":"-142px", "transition":"0.5s"});
     }
-	
+
 });

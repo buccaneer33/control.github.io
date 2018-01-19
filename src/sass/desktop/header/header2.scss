@@ -92,24 +92,23 @@
     }
       &--recc-btn{
         position: relative;
-        cursor: pointer;
+        cursor: pointer;        
         width: 231px;
         height: 100%;
         background-color: #4caf50;
         align-self: flex-end;
         transition: $animation-time;
-        overflow: hidden;
-
         @include flexbox(flex,row,center,center,nowrap);
 
-
+        &:hover{
+        transition: $animation-time;
+        background-color: #8cc63f;
+        }
       }
       &--recc-a{
-        position: absolute;
+        position: relative;
         color: #fff;
         text-decoration: none;
-        top: 33%;
-        transition: $animation-time;
 
         &::before{
           position: absolute;
@@ -117,26 +116,12 @@
           top: -2px;
           left: -27px;
 
+          &:hover{
+           content: url(../img/svg/appointment-register-active.svg);
+          }
+
       }
     }
-
-    &--recc-active{
-      position: absolute;
-      color: #fff;
-      text-decoration: none;
-      top: -105%;
-      transition: $animation-time;
-
-      &::before{
-        position: absolute;
-        content: url(../img/svg/appointment-register-active.svg);
-        top: -2px;
-        left: -27px;
-
-    }
-  }
-
-
   }
 
   &__wrapper{
@@ -147,16 +132,4 @@
     margin: 0 auto;
   }
 
-}
-.header__contacts--recc-btn:hover{
-  transition: $animation-time;
-  background-color: #8cc63f;
-}
-.header__contacts--recc-btn:hover .header__contacts--recc-a{
-    top: 105%;
-    transition: $animation-time;
-}
-.header__contacts--recc-btn:hover .header__contacts--recc-active{
-    top: 33%;
-    transition: $animation-time;
 }

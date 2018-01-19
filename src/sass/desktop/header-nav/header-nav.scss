@@ -24,10 +24,17 @@
   &-item{
     display: block;
     padding: 0 15px;
+    color: #fff;
+    transition: $animation-time;
+
+    &:hover{
+      color: #4cb050;
+      transition: $animation-time;      
+    }
   }
 
   &-a{
     text-decoration: none;
-    color: #fff;
+    color: inherit;
   }
 }
