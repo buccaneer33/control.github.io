@@ -1,26 +1,114 @@
 .testimonials{
   background-color: #fff;
-  padding: 32px 0;
+  padding: 32px 0 25px;
 
   &__wrapper{
     width: 1056px;
     margin: 0 auto;
+    padding: 12px 0 32px 0;
+    position: relative;
   }
 
   &__header{
-
+      margin: 0px 0 22px 6px;
     &--h{
       color:#008e70;
       font-size: 32px;
+      letter-spacing: 2.1px;
+      padding: 0 0 0 11px;
+      margin: 0 0 24px 0px;
     }
   }
 
+ &__slide{
+
+   &--prev{
+     position: absolute;
+     background: #e6e6e6;
+     left: 1.4%;
+     top: 21.3%;
+     width: 5.4%;
+     height: 45.5%;
+     cursor: pointer;
+     z-index: 10;
+     transition: $animation-time;
+
+         &::after{
+           position: absolute;
+           content: url(../img/svg/arrow-green-left.svg);
+           left: 38%;
+           top: 38.1%;
+           z-index: 20;
+       }
+       &:hover{
+          background: #cccccc;
+          transition: $animation-time;
+       }
+   }
+
+   &--next{
+           position: absolute;
+           background: #e6e6e6;
+           right: 1.5%;
+           top: 21.3%;
+           width: 5.4%;
+           height: 45.4%;
+           z-index: 10;
+           cursor: pointer;
+           transition: $animation-time;
+
+     &::after{
+           position: absolute;
+           content: url(../img/svg/arrow-green-right.svg);
+           left: 38.2%;
+           top: 38%;
+           z-index: 20;
+     }
+
+     &:hover{
+        background: #cccccc;
+        transition: $animation-time;
+     }
+   }
+
+
+
+   &-content{
+     background-color: #f2f2f2;
+     padding: 23px 53px;
+      margin: 0px auto 30px auto;
+     width: 83%;
+
+   }
+   &-item{
+      width: 100%;
+      margin: 0 auto;
+   }
+   &-body{
+     font-size: 18px;
+     line-height: 26px;
+     letter-spacing: 0.7px;
+     margin: 0 0 17px 14px;
+     padding: 0 19px 0px 0;
+
+   }
+   &-autor{
+     margin: 18px 0 5px 13px;
+     font-style: italic;
+     letter-spacing: -0.4px;
+   }
+ }
+
+
+
+
   &__buttons{
     display: inline-block;
+    margin: 0 0 0 16px;
   }
   &__button{
     display: inline-block;
-    margin: 0 16px 0 0;
+    margin: 0 27px 0 0;
 
     &-write{
       display: block;
@@ -30,16 +118,17 @@
       background-color: #4cb050;
       border: 1px solid #4cb050;
       font-size: 12px;
+      letter-spacing: 0.8px;
       box-sizing: border-box;
       text-decoration: none;
       @include flexbox(flex,row,center,center,nowrap);
-      transition: 0.5s;
+      transition: $animation-time;
 
       &:hover{
         color: #fff;
         background-color: #8cc63f;
         border: 1px solid #8cc63f;
-        transition: 0.5s;
+        transition: $animation-time;
       }
     }
 
@@ -51,16 +140,17 @@
       background-color: #fff;
       border: 1px solid #f2f2f2;
       font-size: 12px;
+      letter-spacing: 0.6px;
       box-sizing: border-box;
       text-decoration: none;
       @include flexbox(flex,row,center,center,nowrap);
-      transition: 0.5s;
+      transition: $animation-time;
 
       &:hover{
         color: #333333;
         background-color: #e6e6e6;
         border: 1px solid #e6e6e6;
-        transition: 0.5s;
+        transition: $animation-time;
       }
     }
   }

@@ -1,5 +1,5 @@
 .header__navigation{
-    padding: 17px 0 25px 0;
+    padding: 4px 0 25px 0;
     width: 100%;
 
 
@@ -11,14 +11,14 @@
   &-list{
     @include flexbox(flex,row,stretch,space-between,nowrap);
     width: 100%;
-    padding: 0 0 0 150px;
+    padding: 0 51px 0 150px;
     position: relative;
 
     &::before{
       position: absolute;
       content: url(../img/svg/insayur-logo.svg);
-      top: 5px;
-      left: 2px;
+      top: 7px;
+      left: 17px;
     }
   }
   &-item{
@@ -29,12 +29,14 @@
 
     &:hover{
       color: #4cb050;
-      transition: $animation-time;      
+      transition: $animation-time;
     }
   }
 
   &-a{
     text-decoration: none;
     color: inherit;
+    font-size: 13.5px;
+    letter-spacing: 1.2px;
   }
 }

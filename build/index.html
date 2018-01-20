@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="fonts/fonts.css">
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <script src="js/index.js" type="text/javascript"></script>
-<script src="js/nav-down.js" type="text/javascript"></script>
+
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
@@ -119,6 +119,15 @@
       </nav>
   </div>
   <!--end-menu-scroll-->
+  <!---->
+    <nav class="naver">
+      <ul class="naver__list">
+        <li id="arrow_top" class="naver__list--item-top"></li>
+        <li id="arrow_bot" class="naver__list--item-bot"></li>
+      </ul>
+    </nav>
+
+  <!---->
 
     <section class="header header--flexbox">
 
@@ -179,27 +188,31 @@
           </nav>
       </div>
       <div class="header__slider">
-        <div class="header__slider-content">
-            <div class="header__slider-item">
+          <div class="header__slider-wrapper">
+              <div class="header__slider--prev"></div>
+              <div class="header__slider-content">
+                  <div class="header__slider-item">
 
-                  <h1 class="header__slider-header">20% СКИДКА<br/>
-                  НА ЛЕЧЕНИЕ ЗУБОВ</h1>
+                        <h1 class="header__slider-header">20% СКИДКА<br/>
+                        НА ЛЕЧЕНИЕ ЗУБОВ</h1>
 
-                  <span class="header__slider-span">С 9 по 15 октября</span>
-                  <a class="header__slider-btn">ПОСМОТРЕТЬ ПОДРОБНЕЕ</a>
+                        <span class="header__slider-span">С 9 по 15 октября</span>
+                        <a class="header__slider-btn">ПОСМОТРЕТЬ ПОДРОБНЕЕ</a>
 
 
-            </div>
-          <!--  <div class="header__slider-item"></div>
-            <div class="header__slider-item"></div>-->
+                  </div>
+                <!--  <div class="header__slider-item"></div>
+                  <div class="header__slider-item"></div>-->
+              </div>
+              <div class="header__slider--next"></div>
+
+              <div class="header__slider-check">
+                <div class="header__slider-checkItem"><i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="header__slider-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+                <div class="header__slider-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
+              </div>
         </div>
-        <div class="header__slider-check">
-          <div class="header__slider-checkItem"><i class="fa fa-circle" aria-hidden="true"></i></div>
-          <div class="header__slider-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
-          <div class="header__slider-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
-        </div>
-
-      </div>
+      </div><!--.header__slider-->
 
     </section>
     <section class="services">
@@ -277,21 +290,25 @@
             <div class="about__header">
                 <h2 class="about__header-h">О НАС</h2>
             </div>
+            <div class="about__slide--prev"></div>
+
+
             <div class="about__slide-content">
                 <div class="about__slide-item">
                   Стоматология «Инсаюр Медикал - Дента» была создана в 1995 году, и с самого начала существования
 ключевыми принципами нашей работы были формирование долгосрочных взаимоотношений с клиентами,
 решение их проблем как своих собственных.
                 </div>
-              <!--  <div class="about__slide-item"></div>
-                <div class="about__slide-item"></div>-->
             </div>
+            <div class="about__slide--next"></div>
+
+
             <div class="about__slide-check">
                 <div class="about__slide-checkItem"><i class="fa fa-circle" aria-hidden="true"></i></div>
                 <div class="about__slide-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
                 <div class="about__slide-checkItem"><i class="fa fa-circle-o" aria-hidden="true"></i></div>
             </div>
-        </div>
+        </div><!--.about__wrapper-->
     </section>
 
     <section class="testimonials">
@@ -299,11 +316,25 @@
           <div class="testimonials__header">
                 <h2 class="testimonials__header--h">ОТЗЫВЫ О НАШЕЙ РАБОТЕ</h2>
           </div>
+          <div class="testimonials__slide--prev"></div>
           <div class="testimonials__slide-content">
+              <div class="testimonials__slide-item">
+                  <div class="testimonials__slide-body">
+                    «Лечение кариеса проводится с&nbsp;использованием особо «щадящих» технологий. В расположении
+                    врача имеется необходимый набор современных инструментов, с помощью которых врач
+                    тщательно обрабатывает полость зуба, снимая пораженные ткани»
+                  </div>
+                  <div class="testimonials__slide-autor">
+                    Светлана Сорокина
+                  </div>
+              </div>
+
               <div class="testimonials__slide-item"></div>
-              <div class="testimonials__slide-item"></div>
-              <div class="testimonials__slide-item"></div>
+
+              <div class="testimonials__slide-item"></div><!---->
           </div>
+          <div class="testimonials__slide--next"></div>
+
           <div class="testimonials__buttons">
               <div class="testimonials__button">
                 <a class="testimonials__button-write" href="#write-test">НАПИСАТЬ ОТЗЫВ</a>
@@ -332,7 +363,7 @@
                         <h3 class="articles__item--title">НОВЫЙ ОФИС МЕДИКАЛ ДЕНТЫ</h3>
                   </div>
                   <div class="articles__item--text-box">
-                        «Лечение кариеса проводится с использованием особо «щадящих»
+                        «Лечение кариеса проводится с&nbsp;использованием особо «щадящих»
                         технологий. В расположении врача имеется необходимый набор...
                   </div>
                   <div class="articles__item--button-box">
@@ -348,7 +379,7 @@
                         <h3 class="articles__item--title">ОСОБЕННОСТИ ЛЕЧЕНИЯ ДЕТЕЙ</h3>
                   </div>
                   <div class="articles__item--text-box">
-                        «Лечение кариеса проводится с использованием особо «щадящих»
+                        «Лечение кариеса проводится с&nbsp;использованием особо «щадящих»
                         технологий. В расположении врача имеется необходимый набор...
                   </div>
                   <div class="articles__item--button-box">
@@ -363,7 +394,7 @@
                         <h3 class="articles__item--title">ОБОРУДОВАНИЕ ДЛЯ СТОМАТОЛОГИИ</h3>
                   </div>
                   <div class="articles__item--text-box">
-                        «Лечение кариеса проводится с использованием особо «щадящих»
+                        «Лечение кариеса проводится с&nbsp;использованием особо «щадящих»
                         технологий. В расположении врача имеется необходимый набор...
                   </div>
                   <div class="articles__item--button-box">
@@ -418,6 +449,7 @@
 
           </div>
       </div>
+      <div class="footer__divider"></div>
       <div class="footer__bottom">
           <div class="footer__bottom-logo">© 2017 Инсаюр Медикал-Дента</div>
           <div class="footer__bottom-licens">
@@ -434,6 +466,6 @@
       </div>
     </section>
 
-
+<script src="js/nav-down.js" type="text/javascript"></script>
 </body>
 </html>

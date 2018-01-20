@@ -14,25 +14,48 @@
   }
 
   &--title{
-    font-size: 24px;
-    color: #333;
+      font-size: 24px;
+      color: #333;
+      letter-spacing: 1px;
+      margin: 0;
+      text-align: left;
+      cursor: pointer;
+      transition: $animation-time;
+      &:hover{
+        color: #008e70;
+        transition: $animation-time;
+      }
   }
   &--title-box{
-    padding: 0px 32px 0px 32px;
+    padding: 0px 20px 0px 32px;
+    margin: 25px 0 18px 0;
+    text-align: left;
   }
 
   &--text-box{
     padding: 0px 32px 0px 32px;
     font-size: 14px;
     color: #333333;
+    margin: 18px 0 0px 0;
+    letter-spacing: 0.5px;
+    line-height: 22.4px;
   }
 
   &--button{
     font-size: 12px;
     color: #333;
     text-decoration-color: #008e79;
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: $animation-time;
+
+    &:hover{
+      color: #008e70;
+      text-decoration: none;
+      transition: $animation-time;
+    }
   }
   &--button-box{
-    padding: 32px 32px 32px 32px;
+    padding: 19.2px 32px 26px 32px;
   }
 }

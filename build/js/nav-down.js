@@ -1,3 +1,4 @@
+////выдвигающееся меню ///
 $(function() {
 	var $window = $(window);
     var blockTop = $('.header__slider').offset().top; //расстояние от верха страницы блока
@@ -29,3 +30,26 @@ $(function() {
     }
 
 });
+/////плавный переход по секциям//////
+var items =  document.querySelectorAll("section"), len = items.length;
+ function fn(b) {
+    var a = 0;
+    return function(c) {
+        "current" != c && (c ? (a--, 0 > a && (a = b - 1)) : (a = ++a % b));
+        return a
+    }
+};
+var fn = fn(len);
+ 
+function fnShow(a)
+{
+   items[fn(a)].scrollIntoView({behavior: "smooth"});
+   return false
+}
+document.querySelector("#arrow_top").addEventListener("click", function() {
+  fnShow(true )
+}, false);
+document.querySelector("#arrow_bot").addEventListener("click", function() {
+ fnShow(false)
+}, false);
+
