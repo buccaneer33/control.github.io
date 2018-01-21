@@ -25,11 +25,16 @@
   }
   &__slide--prev{
           position: absolute;
-          background: rgba(0, 0, 0, 0.1);
+          background: rgba(0, 0, 0, 0.05);
           left: 0%;
           top: 26%;
           width: 4%;
           height: 33%;
+          cursor: pointer;
+          z-index: 25;
+          &:hover{
+            background: rgba(0, 0, 0, 0.1);
+          }
 
         &::after{
           position: absolute;
@@ -43,11 +48,16 @@
   }
   &__slide--next{
           position: absolute;
-          background: rgba(0, 0, 0, 0.1);
+          background: rgba(0, 0, 0, 0.05);
           right: 0%;
           top: 26%;
           width: 4%;
           height: 33%;
+          cursor: pointer;
+          z-index: 25;
+          &:hover{
+            background: rgba(0, 0, 0, 0.1);
+          }
 
     &::after{
           position: absolute;
