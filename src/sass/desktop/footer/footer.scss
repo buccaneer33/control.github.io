@@ -30,7 +30,7 @@
 
     &--vk{
         cursor: pointer;
-        background: url(../img/svg/vk.svg);
+        background: url(../img/SVG/vk.svg);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 110%;
@@ -41,7 +41,7 @@
         transition: $animation-time;
 
       &:hover {
-        background:url(../img/svg/vk-hover.svg);
+        background:url(../img/SVG/vk-hover.svg);
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: 110%;
@@ -49,7 +49,7 @@
       }
     }
     &--fb{
-      background: url(../img/svg/fb.svg);
+      background: url(../img/SVG/fb.svg);
       background-repeat: no-repeat;
       background-position: 27% 73%;
       background-size: 65%;
@@ -60,7 +60,7 @@
       transition: $animation-time;
 
       &:hover{
-        background: url(../img/svg/fb-hover.svg);
+        background: url(../img/SVG/fb-hover.svg);
         background-repeat: no-repeat;
         background-position: 27% 73%;
         background-size: 65%;
@@ -68,7 +68,7 @@
       }
     }
     &--insta{
-      background: url(../img/svg/insta.svg);
+      background: url(../img/SVG/insta.svg);
       background-repeat: no-repeat;
       background-position: center center;
       background-size: 100%;
@@ -79,7 +79,7 @@
       transition: $animation-time;
 
       &:hover{
-        background: url(../img/svg/insta-hover.svg);
+        background: url(../img/SVG/insta-hover.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 100%;
@@ -87,7 +87,7 @@
       }
     }
     &--ok{
-      background: url(../img/svg/odnoklassniki.svg);
+      background: url(../img/SVG/odnoklassniki.svg);
       background-repeat: no-repeat;
       background-position: 32% 74%;
       background-size: 60%;
@@ -98,7 +98,7 @@
       transition: $animation-time;
 
       &:hover{
-        background: url(../img/svg/odnoklassniki-hover.svg);
+        background: url(../img/SVG/odnoklassniki-hover.svg);
         background-repeat: no-repeat;
         background-position: 32% 74%;
         background-size: 60%;
