@@ -32,6 +32,7 @@
   }
   &--next{
     position: absolute;
+    cursor: pointer;
     background: rgba(0, 0, 0, 0.05);
     right: 0%;
     top: 0%;
@@ -92,6 +93,7 @@
   }
   &-btn{
       display: block;
+      cursor: pointer;
       color: #fff;
       border: 1px solid #fff;
       padding: 21px 36px;
