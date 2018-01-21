@@ -2,6 +2,7 @@
   //flex-basis: 600px;
   //height: 600px;
   width: 100%;
+  min-height: 600px;
   //max-width: 1920px;
   //min-width: 1280px;
   background-color: #dcc;
@@ -111,7 +112,7 @@
         overflow: hidden;
         margin: 0 0 0 104px;
 
-        @include flexbox(flex,row,center,center,nowrap);
+      //  @include flexbox(flex,row,center,center,nowrap);
 
 
       }
@@ -120,7 +121,7 @@
         color: #fff;
         text-decoration: none;
         top: 33%;
-        margin: 0 0 0 16px;
+        margin: 1px 0 0 76px;
         letter-spacing: 0.7px;
         transition: $animation-time;
 
@@ -128,7 +129,7 @@
           position: absolute;
           content: url(../img/SVG/appointment-register.svg);
           top: -2px;
-          left: -31px;
+          left: -32px;
 
       }
     }
