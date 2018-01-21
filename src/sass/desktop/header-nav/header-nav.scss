@@ -14,15 +14,19 @@
     padding: 0 63px 0 162px;
     position: relative;
 
-    &::before{
-      position: absolute;
-      content: url(../img/SVG/insayur-logo.svg);
-      width: 119px;
-      height: 47px;
-      top: 7px;
-      left: 17px;
+  }
+  &-logo{
+    position: absolute;
+    width: 119px;
+    height: 47px;
+    top: 6px;
+    left: 16px;
+
+    &-a{
+
     }
   }
+
   &-item{
     display: block;
     padding: 0 3px;
